@@ -224,6 +224,10 @@ All configuration goes through environment variables, set in `~/.twicc/.env`:
 
 A key defined in the `.env` wins over the process environment. The three provider home keys are read **only** from the `.env`: an inherited `CLAUDE_CONFIG_DIR` / `CODEX_HOME` exported in your shell is ignored (with a warning at startup) — write it in the `.env` as a plain `KEY=VALUE` line. `TWICC_OPENROUTER_API_KEY` follows the same rule, and TwiCC never exports it to the processes it launches. `TWICC_DATA_DIR` is the one variable read **only** from the environment, because it locates the `.env`: `TWICC_DATA_DIR=<dir>` (default `~/.twicc/`) moves the data directory (database, logs, settings).
 
+### Offline mode
+
+`twicc --offline` (or `TWICC_OFFLINE=1`) turns off every outbound network call TwiCC makes on its own — version check, GitHub changelog, telemetry, provider status pages, OpenRouter, background usage polling, Codex runtime download. Each one also has its own `TWICC_NO_*` switch; all are on by default. See [Offline mode and outbound network switches](docs/offline-mode.md).
+
 ### Password protection
 
 Set, clear, or check the password interactively. Use the same invocation prefix as for launching TwiCC — `twicc` if you installed it permanently, `uvx twicc` for a one-off run, or `uv run twicc` from a source checkout:

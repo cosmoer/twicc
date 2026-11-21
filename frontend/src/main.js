@@ -55,6 +55,7 @@ import '@awesome.me/webawesome/dist/components/card/card.js'
 import '@awesome.me/webawesome/dist/components/comparison/comparison.js'
 import '@awesome.me/webawesome/dist/components/divider/divider.js'
 import '@awesome.me/webawesome/dist/components/icon/icon.js'
+import './utils/localIcons'
 import './utils/brandRobotIcon'
 // Glass popovers: cut the body border under the arrow (see glass.css).
 import { installGlassArrowGap } from './utils/glassArrowGap'

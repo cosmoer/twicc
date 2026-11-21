@@ -22,6 +22,7 @@ import '@awesome.me/webawesome/dist/components/dialog/dialog.js'
 import '@awesome.me/webawesome/dist/components/button/button.js'
 import '@awesome.me/webawesome/dist/components/callout/callout.js'
 import '@awesome.me/webawesome/dist/components/icon/icon.js'
+import './localIcons'
 
 import ArtifactShellApp from './ArtifactShellApp.vue'
 import { recordShareView } from '../share-recent/recordView'

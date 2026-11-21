@@ -51,6 +51,7 @@ import '../styles/quote-card.css'
 import '../styles/tool-cards.css'
 import '../styles/scrollbars.css'
 // The working agent's robot: the brand icon and its hop animation, like the SPA's.
+import '../utils/localIcons'
 import './brandRobotIcon'
 import '../styles/robot-working.css'
 import ShareSessionApp from './ShareSessionApp.vue'

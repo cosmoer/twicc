@@ -2874,7 +2874,7 @@ defineExpose({
         </div>
         <div v-else-if="dragOverType" class="drop-overlay">
             <div class="drop-overlay-content">
-                <wa-icon :name="dragOverType === 'files' ? 'cloud-upload' : 'text-indent-left'" style="font-size: 3rem;"></wa-icon>
+                <wa-icon :name="dragOverType === 'files' ? 'cloud-upload' : 'indent'" style="font-size: 3rem;"></wa-icon>
                 <span>{{ dragOverType === 'files' ? $t('session.drop.files') : $t('session.drop.text') }}</span>
             </div>
         </div>

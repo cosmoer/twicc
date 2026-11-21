@@ -12,7 +12,9 @@
     "i18n:android:check": "node scripts/generate-android-i18n.mjs --check",
     "lint:i18n:android": "node scripts/check-android-i18n-source.mjs",
     "sounds:android:generate": "node scripts/generate-android-notification-sounds.mjs",
-    "sounds:android:check": "node scripts/generate-android-notification-sounds.mjs --check"
+    "sounds:android:check": "node scripts/generate-android-notification-sounds.mjs --check",
+    "icons:sync": "node scripts/sync-fa-icons.mjs",
+    "icons:check": "node scripts/sync-fa-icons.mjs --check"
   },
   "type": "module",
   "keywords": [],
@@ -68,6 +70,7 @@
     "vue3-calendar-heatmap": "^2.0.5"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "~7.2.0",
     "@intlify/eslint-plugin-vue-i18n": "^4.5.1",
     "@typescript-eslint/parser": "^8.72.1",
     "@vitejs/plugin-vue": "^6.0.10",

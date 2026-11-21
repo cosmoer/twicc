@@ -127,6 +127,12 @@ async def start_version_check_task() -> None:
     """
     global _latest_known_version
 
+    from twicc.network_switches import network_feature_enabled
+
+    if not network_feature_enabled("version_check"):
+        logger.info("Version check disabled (TWICC_NO_VERSION_CHECK / TWICC_OFFLINE)")
+        return
+
     stop_event = get_version_check_stop_event()
     current_version = Version(settings.APP_VERSION)
 

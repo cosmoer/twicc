@@ -27,6 +27,7 @@ from __future__ import annotations
 import asyncio
 import logging
 
+from twicc.network_switches import network_feature_enabled
 from twicc.pricing import extract_provider_prices, fetch_openrouter_models
 
 logger = logging.getLogger(__name__)
@@ -99,6 +100,9 @@ async def sync_all_providers() -> dict[str, dict[str, int]]:
     non-fatal — existing DB rows or each helper's
     :attr:`DEFAULT_FAMILY_PRICES` continue to serve as fallbacks.
     """
+    if not network_feature_enabled("price_sync"):
+        logger.info("Price sync disabled (TWICC_NO_PRICE_SYNC / TWICC_OFFLINE): using existing DB or default prices")
+        return {}
     logger.info("Running initial price sync (cross-provider)...")
     try:
         extracted = await asyncio.to_thread(_fetch_and_extract_all_blocking)
@@ -133,6 +137,8 @@ async def start_price_sync_task(stop_event: asyncio.Event) -> None:
     once at startup (the loop sleeps before its first iteration to
     avoid a redundant fetch immediately after the initial sync).
     """
+    if not network_feature_enabled("price_sync"):
+        return
     logger.info("Price sync task started (cross-provider)")
 
     try:

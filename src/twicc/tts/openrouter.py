@@ -332,6 +332,10 @@ async def fetch_speech_models() -> list[dict]:
     A success is cached ``MODELS_CACHE_TTL`` seconds; a failure is not cached.
     """
     global _models_cache
+    from twicc.network_switches import network_feature_enabled
+
+    if not network_feature_enabled("openrouter"):
+        return []
     if _models_cache is not None and time.monotonic() - _models_cache[0] < MODELS_CACHE_TTL:
         return _copy_models(_models_cache[1])
     try:

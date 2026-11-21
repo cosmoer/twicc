@@ -146,8 +146,8 @@ function onVersionChange(event) {
 // Image fallback: try local, on error switch to GitHub
 function onImageError(event, img) {
     const githubUrl = resolveImageGitHubUrl(img.path)
-    // Only fallback once to avoid infinite loop
-    if (event.target.src !== githubUrl) {
+    // Only fallback once to avoid infinite loop (null: GitHub fetch switched off)
+    if (githubUrl && event.target.src !== githubUrl) {
         event.target.src = githubUrl
     }
 }

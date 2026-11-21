@@ -273,6 +273,13 @@ def _cleanup_previous_runtimes() -> None:
 
 
 def _download_and_extract() -> None:
+    from twicc.network_switches import network_feature_enabled
+
+    if not network_feature_enabled("codex_runtime_download"):
+        raise CodexRuntimeError(
+            f"Codex runtime {CODEX_VERSION} is not installed in {_cache_root()} and its download "
+            "is disabled (TWICC_NO_CODEX_RUNTIME_DOWNLOAD / TWICC_OFFLINE)."
+        )
     tag = _platform_tag()
     wheel_name, expected_sha = _WHEELS[tag]
     url = f"{_RELEASE_URL}/{wheel_name}"

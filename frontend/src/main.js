@@ -56,6 +56,7 @@ import '@awesome.me/webawesome/dist/components/comparison/comparison.js'
 import '@awesome.me/webawesome/dist/components/divider/divider.js'
 import '@awesome.me/webawesome/dist/components/icon/icon.js'
 import './utils/localIcons'
+import { setRemoteChangelogEnabled } from './utils/changelog.js'
 import './utils/brandRobotIcon'
 // Glass popovers: cut the body border under the arrow (see glass.css).
 import { installGlassArrowGap } from './utils/glassArrowGap'
@@ -268,6 +269,8 @@ async function initializeApp() {
                 // ``frontend/src/utils/twiccLaunch.js``).
                 setTwiccLaunchPrefix(twicc_launch_prefix)
                 setUpdateInstructions(bootstrapData.update_instructions)
+                // TWICC_NO_CHANGELOG_FETCH / TWICC_OFFLINE: read the changelog from the backend, not GitHub.
+                setRemoteChangelogEnabled(bootstrapData.network?.features?.changelog_fetch !== false)
                 applyDefaultSettings(default_settings, settings, dev_mode, uvx_mode, settings_version, disabledProvidersPresent, disabledProviders, claudeHybridEnabled)
                 // Seed the data store's provider lifecycle map.
                 useDataStore().applyProviderStates(providerStates ?? {})

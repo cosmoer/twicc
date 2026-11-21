@@ -1,4 +1,4 @@
-import { readFile, rm } from 'node:fs/promises'
+import { copyFile, readFile, rm } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -64,6 +64,17 @@ const dropReadmeOnlyAssets = {
     },
 }
 
+// Ship CHANGELOG.md with the build (static/frontend/CHANGELOG.md): the backend
+// serves it at /api/changelog/ when the GitHub fetch is switched off
+// (TWICC_NO_CHANGELOG_FETCH / TWICC_OFFLINE), so the "What's new" dialog works offline.
+const copyChangelog = {
+    name: 'twicc-copy-changelog',
+    apply: 'build',
+    async closeBundle() {
+        await copyFile(new URL('../CHANGELOG.md', import.meta.url), resolve(buildOutDir, 'CHANGELOG.md'))
+    },
+}
+
 export default defineConfig(({ command }) => ({
     plugins: [
         vue({
@@ -76,6 +87,7 @@ export default defineConfig(({ command }) => ({
         injectBrowserCompanion,
         injectRecoveryMessages,
         dropReadmeOnlyAssets,
+        copyChangelog,
     ],
     // Use /static/ base only for production build (Django serves static files)
     // In dev mode, use root path

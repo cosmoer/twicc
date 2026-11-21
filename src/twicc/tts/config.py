@@ -237,7 +237,12 @@ def script_config_validated(entry: dict) -> bool:
 
 
 def openrouter_api_key() -> str | None:
-    """The OpenRouter key from <data_dir>/.env; None when absent or empty."""
+    """The OpenRouter key from <data_dir>/.env; None when absent or empty, or when
+    OpenRouter is switched off (TWICC_NO_OPENROUTER / TWICC_OFFLINE)."""
+    from twicc.network_switches import network_feature_enabled
+
+    if not network_feature_enabled("openrouter"):
+        return None
     return get_env_secret(OPENROUTER_API_KEY_ENV)
 
 

@@ -638,6 +638,13 @@ def main():
 
         logger.info("TWICC starting...")
         logger.info("Environment loaded")
+        from twicc.network_switches import is_offline, network_switches_state
+
+        disabled_network = sorted(f for f, enabled in network_switches_state().items() if not enabled)
+        if is_offline():
+            logger.info("Offline mode (TWICC_OFFLINE): every outbound network feature is off")
+        elif disabled_network:
+            logger.info("Outbound network features off: %s", ", ".join(disabled_network))
         # Provider homes: what the .env dropped (already printed to stderr by
         # ``cli.main()``; repeated here so it lands in backend.log), then one
         # line per resolved location. Validation already passed in ``cli.main()``.

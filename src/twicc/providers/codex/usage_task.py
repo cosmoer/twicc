@@ -61,6 +61,13 @@ async def start_usage_sync_task() -> None:
     loop, as it involves an HTTP request to ChatGPT's ``wham/usage``
     endpoint.
     """
+    from twicc.network_switches import network_feature_enabled
+
+    if not network_feature_enabled("usage_sync"):
+        # Background polling only: the sidebar "Refresh now" button still fetches on demand.
+        logger.info("Usage sync disabled (TWICC_NO_USAGE_SYNC / TWICC_OFFLINE)")
+        return
+
     interval = CodexHelpers.USAGE_SYNC_INTERVAL
     stop_event = get_usage_sync_stop_event()
     wake_event = get_usage_wake_event()

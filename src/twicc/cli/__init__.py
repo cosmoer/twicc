@@ -49,12 +49,24 @@ def _version_callback(value: bool) -> None:
         raise typer.Exit()
 
 
+def _apply_offline_flag(offline: bool) -> None:
+    """``--offline`` is ``TWICC_OFFLINE=1`` (twicc.network_switches): set before the
+    server imports Django settings, and inherited by the agents it spawns."""
+    if offline:
+        os.environ["TWICC_OFFLINE"] = "1"
+
+
+_OFFLINE_HELP = "Turn off every outbound network call TwiCC makes on its own (same as TWICC_OFFLINE=1)."
+
+
 @app.callback()
 def _default(
     ctx: typer.Context,
     version: bool = typer.Option(False, "--version", "-V", callback=_version_callback, is_eager=True, help="Show version and exit."),
+    offline: bool = typer.Option(False, "--offline", help=_OFFLINE_HELP),
 ) -> None:
     """Launch the TwiCC server (default when no subcommand is given)."""
+    _apply_offline_flag(offline)
     if ctx.invoked_subcommand is not None:
         return
 
@@ -64,8 +76,9 @@ def _default(
 
 
 @app.command()
-def run() -> None:
+def run(offline: bool = typer.Option(False, "--offline", help=_OFFLINE_HELP)) -> None:
     """Start the TwiCC server (you can commit thr `run` command)."""
+    _apply_offline_flag(offline)
     from twicc.cli.run import main as run_main
 
     run_main()

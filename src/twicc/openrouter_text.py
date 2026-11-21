@@ -19,6 +19,7 @@ from typing import NamedTuple
 import httpx
 import orjson
 
+from twicc.network_switches import network_feature_enabled
 from twicc.paths import OPENROUTER_API_KEY_ENV, get_env_secret
 
 logger = logging.getLogger(__name__)
@@ -114,13 +115,21 @@ def _auth_headers(api_key: str) -> dict:
     return {"Authorization": f"Bearer {api_key}"}
 
 
+def _usable_key() -> str | None:
+    """The OpenRouter key, or None when unset or when OpenRouter is switched off
+    (TWICC_NO_OPENROUTER / TWICC_OFFLINE): a disabled OpenRouter reads as "no key"."""
+    if not network_feature_enabled("openrouter"):
+        return None
+    return get_env_secret(OPENROUTER_API_KEY_ENV)
+
+
 def openrouter_key_set() -> bool:
     """Whether the OpenRouter key is set (its value never leaves this module's calls)."""
-    return get_env_secret(OPENROUTER_API_KEY_ENV) is not None
+    return _usable_key() is not None
 
 
 def _api_key() -> str:
-    api_key = get_env_secret(OPENROUTER_API_KEY_ENV)
+    api_key = _usable_key()
     if api_key is None:
         raise OpenRouterTextError("no_key")
     return api_key

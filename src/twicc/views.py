@@ -22,6 +22,7 @@ from channels.layers import get_channel_layer
 import orjson
 
 from twicc import search
+from twicc.network_switches import is_offline, network_feature_enabled, network_switches_state
 from twicc.core.content_storage.readers import effective_current, iter_matching_items, aload_current
 from twicc.agent.registry import get_agent_manager_registry
 from twicc.core.enums import ItemDisplayLevel, ItemKind, Provider
@@ -4120,6 +4121,9 @@ async def bootstrap(request):
         "twicc_launch_prefix": settings.TWICC_LAUNCH_PREFIX,
         "update_instructions": prepare_update_instructions_for_client(settings.UPDATE_INSTRUCTIONS),
         "claudeHybridEnabled": settings.CLAUDE_HYBRID_ENABLED,
+        # Outbound network switches (twicc.network_switches): the frontend skips its
+        # own remote fetches (changelog) when they are off.
+        "network": {"offline": is_offline(), "features": network_switches_state()},
         "workspaces": workspaces_data.get("workspaces", []),
         "terminal_config": terminal_config,
         "message_snippets": message_snippets,
@@ -4136,12 +4140,28 @@ async def bootstrap(request):
     })
 
 
+def _local_changelog_path():
+    """The checkout's CHANGELOG.md, else the copy the frontend build ships
+    (``static/frontend/CHANGELOG.md``, see frontend/vite.config.js); None when neither exists."""
+    for path in (
+        settings.PACKAGE_DIR.parent.parent / "CHANGELOG.md",
+        settings.PACKAGE_DIR / "static" / "frontend" / "CHANGELOG.md",
+    ):
+        if path.is_file():
+            return path
+    return None
+
+
 async def changelog(request):
-    """GET /api/changelog/ - Serve the local CHANGELOG.md (dev mode only)."""
-    if not settings.DEV_MODE:
+    """GET /api/changelog/ - Serve the local CHANGELOG.md.
+
+    Dev mode, or when the frontend's GitHub fetch is switched off
+    (TWICC_NO_CHANGELOG_FETCH / TWICC_OFFLINE); otherwise the frontend reads GitHub.
+    """
+    if not settings.DEV_MODE and network_feature_enabled("changelog_fetch"):
         raise Http404
-    changelog_path = settings.PACKAGE_DIR.parent.parent / "CHANGELOG.md"
-    if not changelog_path.is_file():
+    changelog_path = _local_changelog_path()
+    if changelog_path is None:
         raise Http404
     return HttpResponse(changelog_path.read_bytes(), content_type="text/plain; charset=utf-8")
 

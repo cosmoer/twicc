@@ -259,6 +259,21 @@ def agent_run_metadata(monkeypatch, metadata_rows):
 
 
 @pytest.fixture(autouse=True)
+def network_switches_default(monkeypatch):
+    """Run every test with the outbound network switches at their defaults (all on).
+
+    A suite started from an agent of an offline TwiCC (``twicc --offline``)
+    inherits ``TWICC_OFFLINE=1``, which would silently turn features off.
+    """
+    from twicc.network_switches import OFFLINE_ENV, SWITCHES
+
+    monkeypatch.delenv(OFFLINE_ENV, raising=False)
+    for env in SWITCHES.values():
+        if env:
+            monkeypatch.delenv(env, raising=False)
+
+
+@pytest.fixture(autouse=True)
 def fresh_process_state(monkeypatch):
     """Isolate caches, title queues, and project directories between tests.
 

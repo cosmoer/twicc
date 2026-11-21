@@ -6,14 +6,25 @@ import { localUiError } from '../i18n/uiMessages.js'
 const GITHUB_RAW_BASE = 'https://raw.githubusercontent.com/twidi/twicc/refs/heads/main/'
 const CHANGELOG_URL = GITHUB_RAW_BASE + 'CHANGELOG.md'
 
+// Off when the backend runs with TWICC_NO_CHANGELOG_FETCH / TWICC_OFFLINE (bootstrap
+// ``network.features.changelog_fetch``): nothing is then requested from GitHub, the
+// changelog comes from the backend (the CHANGELOG.md shipped with the build).
+let remoteChangelogEnabled = true
+
+/** @param {boolean} enabled - Whether the changelog (and its image fallback) may be read from GitHub */
+export function setRemoteChangelogEnabled(enabled) {
+    remoteChangelogEnabled = !!enabled
+}
+
 /**
  * Fetch and parse the changelog.
- * In dev mode, fetches from the local backend endpoint; otherwise from GitHub.
+ * In dev mode, or when the GitHub fetch is switched off, fetches from the local
+ * backend endpoint; otherwise from GitHub.
  * @param {boolean} devMode - Whether the backend is running in dev mode
  * @returns {Promise<Array<{version: string, date: string|null, entries: Array}>>}
  */
 export async function fetchChangelog(devMode = false) {
-    const url = devMode ? '/api/changelog/' : CHANGELOG_URL
+    const url = devMode || !remoteChangelogEnabled ? '/api/changelog/' : CHANGELOG_URL
     const resp = await fetch(url)
     if (!resp.ok) throw localUiError('help.changelog.errors.fetch', { status: resp.status })
     const versions = parseChangelog(await resp.text())
@@ -125,9 +136,10 @@ export { resolvePublicAssetUrl as resolveImageLocalUrl } from './publicAsset.js'
  * Resolve an image path to the GitHub raw URL (fallback).
  *
  * @param {string} path - Raw path from CHANGELOG
- * @returns {string} GitHub raw content URL
+ * @returns {string|null} GitHub raw content URL, or null when the GitHub fetch is switched off
  */
 export function resolveImageGitHubUrl(path) {
+    if (!remoteChangelogEnabled) return null
     return GITHUB_RAW_BASE + path
 }
 

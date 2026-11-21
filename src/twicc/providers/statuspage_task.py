@@ -71,10 +71,11 @@ async def check_once(provider: Provider) -> dict | None:
     otherwise (unchanged, component missing, or a fetch error — all logged,
     none raised, so a bad tick never kills the loop).
     """
+    from twicc.network_switches import network_feature_enabled
     from twicc.providers.helpers import get_provider_helpers
 
     config = get_provider_helpers(provider).STATUSPAGE
-    if config is None:
+    if config is None or not network_feature_enabled("status_page"):
         return None
     try:
         status = await fetch_component_status(config.components_url, config.component_name)
@@ -98,8 +99,13 @@ async def start_statuspage_task(provider: Provider) -> None:
     """Run *provider*'s poll loop until its stop event is set."""
     from twicc.providers.helpers import get_provider_helpers
 
+    from twicc.network_switches import network_feature_enabled
+
     if get_provider_helpers(provider).STATUSPAGE is None:
         logger.info("No status page declared for %s, statuspage task not started", provider.value)
+        return
+    if not network_feature_enabled("status_page"):
+        logger.info("Statuspage polling disabled (TWICC_NO_STATUS_PAGE / TWICC_OFFLINE), not started for %s", provider.value)
         return
 
     stop_event = get_statuspage_stop_event(provider)

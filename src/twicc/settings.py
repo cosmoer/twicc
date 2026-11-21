@@ -455,6 +455,16 @@ TELEMETRY_ENDPOINT = (
     os.environ.get("TWICC_TELEMETRY_URL", "").strip() or "https://twicc-telemetry.twidi.com/v1/telemetry"
 )
 
+# Outbound network switches (twicc.network_switches, docs/offline-mode.md)
+# Set TWICC_OFFLINE=1 (or run `twicc --offline`) to turn off every outbound call
+# TwiCC makes on its own: PyPI version check, GitHub changelog fetch, telemetry,
+# provider status pages, OpenRouter (prices, summaries, titles, TTS), background
+# usage polling and the Codex runtime download. Each one also has its own
+# TWICC_NO_<FEATURE>=1 switch. All on by default. Read at call time, not here.
+from twicc.network_switches import apply_offline_environment  # noqa: E402
+
+apply_offline_environment()
+
 # Auto-enable every registered provider at first boot
 # Set TWICC_AUTO_ENABLE_PROVIDERS=1 to bypass the initial provider activation
 # dialog: at backend startup, if ``disabledProviders`` is absent from

@@ -36,7 +36,12 @@ GRACE_AFTER_ACTIVATION = 60 * 60  # 1 hour
 
 
 def is_telemetry_active() -> bool:
+    from twicc.network_switches import network_feature_enabled
     from twicc.synced_settings import read_synced_settings
+
+    # TWICC_OFFLINE forces telemetry off whatever the synced setting says.
+    if not network_feature_enabled("telemetry"):
+        return False
 
     synced = read_synced_settings()
     # Nothing at all before the user has acknowledged the notice: an unread

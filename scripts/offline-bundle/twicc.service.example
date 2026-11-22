@@ -1,0 +1,18 @@
+# systemd *user* service for TwiCC (installed by ./install.sh --systemd).
+#   systemctl --user enable --now twicc
+#   journalctl --user -u twicc -f        # logs also in <data dir>/logs/backend.log
+#   sudo loginctl enable-linger "$USER"  # keep running without an open session
+[Unit]
+Description=TwiCC (offline)
+After=network.target
+
+[Service]
+Type=simple
+Environment=TWICC_DATA_DIR=@DATA_DIR@
+Environment=TWICC_OFFLINE=1
+ExecStart=@TWICC_BIN@ --offline
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

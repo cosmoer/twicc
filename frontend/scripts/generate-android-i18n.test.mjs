@@ -3,7 +3,7 @@ import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { compileAndroidCatalog, generateAndroidI18n } from './generate-android-i18n.mjs'
 
-const locales = ['en', 'de', 'es', 'fr', 'pt-BR']
+const locales = ['en', 'de', 'es', 'fr', 'pt-BR', 'zh-CN']
 const manifest = (messages = { 'sample.message': {} }) => ({ format: 1, locales, messages })
 const catalogs = source => Object.fromEntries(locales.map(locale => [locale, { 'sample.message': source }]))
 
@@ -87,7 +87,7 @@ test('validatesDeclaredNumberFormats', () => {
 test('generatedAssetsMatchSourcesAndVueOracle', async () => {
     const result = await generateAndroidI18n({ check: true })
     assert.ok(result.keys > 0)
-    assert.equal(result.locales, 5)
+    assert.equal(result.locales, 6)
     const fixtures = JSON.parse(readFileSync(new URL('../../android/app/src/test/resources/i18n/render-cases.json', import.meta.url)))
     assert.ok(fixtures.cases.some(value => value.locale === 'fr' && value.message.count === 1.5))
     assert.ok(fixtures.cases.some(value => value.message.count === 21))

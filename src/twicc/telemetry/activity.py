@@ -13,7 +13,7 @@ from twicc.telemetry.task import is_telemetry_active
 logger = logging.getLogger(__name__)
 METRICS = frozenset({'manual_summaries', 'manual_tts_messages', 'timeline_tts_messages', 'timeline_tts_activations'})
 BROWSERS = frozenset({'chrome', 'firefox', 'safari', 'edge', 'opera', 'samsung_internet', 'brave', 'vivaldi', 'other', 'android_app'})
-LOCALES = frozenset({'en', 'de', 'es', 'fr', 'pt-BR'})
+LOCALES = frozenset({'en', 'de', 'es', 'fr', 'pt-BR', 'zh-CN'})
 _VERSION = re.compile(r'[0-9]+(?:\.[0-9]+){1,3}(?:[-+][A-Za-z0-9.-]+)?\Z')
 
 

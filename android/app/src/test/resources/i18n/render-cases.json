@@ -25532,6 +25532,5160 @@
             "amount": "decimal"
           }
         }
+      },
+      "zh-CN": {
+        "android.instances.subtitle": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "通过 HTTPS 隧道连接到你现有的 TwiCC 服务器。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.instances.saved": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "已保存的实例"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.instances.lastUsed": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "上次使用"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.instances.emptyTitle": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "还没有实例"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.instances.emptyBody": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "添加你的 TwiCC 服务器地址即可开始。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.instances.add": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "添加实例"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.instances.editTitle": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "编辑实例"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.instances.nameLabel": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "名称（可选）"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.instances.addressLabel": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "服务器地址"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.instances.addressHint": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "仅限 HTTPS。新地址需要重新登录。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.instances.remove": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "移除"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.instances.removeTitle": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "移除 "
+                },
+                {
+                  "type": "named",
+                  "name": "name"
+                },
+                {
+                  "type": "text",
+                  "value": "？"
+                }
+              ],
+              "parameters": [
+                "name"
+              ]
+            }
+          ],
+          "parameters": [
+            "name"
+          ],
+          "numberFormats": {}
+        },
+        "android.instances.removeMessage": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "移除此地址，并请求删除其在各引擎中的登录信息和 Web 存储。服务器不受影响。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.instances.openDescription": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "打开 "
+                },
+                {
+                  "type": "named",
+                  "name": "name"
+                },
+                {
+                  "type": "text",
+                  "value": "，"
+                },
+                {
+                  "type": "named",
+                  "name": "address"
+                }
+              ],
+              "parameters": [
+                "address",
+                "name"
+              ]
+            }
+          ],
+          "parameters": [
+            "address",
+            "name"
+          ],
+          "numberFormats": {}
+        },
+        "android.instances.editDescription": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "编辑 "
+                },
+                {
+                  "type": "named",
+                  "name": "name"
+                }
+              ],
+              "parameters": [
+                "name"
+              ]
+            }
+          ],
+          "parameters": [
+            "name"
+          ],
+          "numberFormats": {}
+        },
+        "android.instances.removeDescription": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "移除 "
+                },
+                {
+                  "type": "named",
+                  "name": "name"
+                }
+              ],
+              "parameters": [
+                "name"
+              ]
+            }
+          ],
+          "parameters": [
+            "name"
+          ],
+          "numberFormats": {}
+        },
+        "android.instances.errors.duplicate": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "此服务器地址已保存。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.instances.errors.invalidAddress": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "请输入有效的 HTTPS 地址。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.instances.errors.httpsRequired": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "请使用 HTTPS 地址，例如 https://twicc.example.com。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.instances.errors.originRequired": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "请使用不含凭据、查询或片段的服务器地址。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.instances.errors.rootRequired": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "请使用服务器根地址，不要包含页面路径。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.instances.errors.invalidPort": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "请输入有效的端口号。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.browser.menuDescription": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "name"
+                },
+                {
+                  "type": "text",
+                  "value": " 的 Android 应用菜单"
+                }
+              ],
+              "parameters": [
+                "name"
+              ]
+            }
+          ],
+          "parameters": [
+            "name"
+          ],
+          "numberFormats": {}
+        },
+        "android.browser.version": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "TwiCC "
+                },
+                {
+                  "type": "named",
+                  "name": "version"
+                },
+                {
+                  "type": "text",
+                  "value": " · "
+                },
+                {
+                  "type": "named",
+                  "name": "engine"
+                }
+              ],
+              "parameters": [
+                "engine",
+                "version"
+              ]
+            }
+          ],
+          "parameters": [
+            "engine",
+            "version"
+          ],
+          "numberFormats": {}
+        },
+        "android.browser.errors.engineStart": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "engine"
+                },
+                {
+                  "type": "text",
+                  "value": " 无法启动。请检查引擎安装，然后重新打开 TwiCC。"
+                }
+              ],
+              "parameters": [
+                "engine"
+              ]
+            }
+          ],
+          "parameters": [
+            "engine"
+          ],
+          "numberFormats": {}
+        },
+        "android.browser.errors.rendererStopped": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "页面意外停止。重试以重新打开 TwiCC。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.browser.errors.instanceRemoved": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "此实例已不再保存。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.browser.errors.sessionClosed": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "浏览器会话已关闭。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.browser.errors.unreachable": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "无法连接 "
+                },
+                {
+                  "type": "named",
+                  "name": "name"
+                },
+                {
+                  "type": "text",
+                  "value": "。请检查网络连接和 HTTPS 隧道，然后重试。"
+                }
+              ],
+              "parameters": [
+                "name"
+              ]
+            }
+          ],
+          "parameters": [
+            "name"
+          ],
+          "numberFormats": {}
+        },
+        "android.browser.errors.certificate": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "无法验证 HTTPS 证书。请检查隧道证书和手机日期。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.browser.errors.httpStatus": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "服务器返回 HTTP "
+                },
+                {
+                  "type": "named",
+                  "name": "status"
+                },
+                {
+                  "type": "text",
+                  "value": "。请检查隧道或服务器，然后重试。"
+                }
+              ],
+              "parameters": [
+                "status"
+              ]
+            }
+          ],
+          "parameters": [
+            "status"
+          ],
+          "numberFormats": {}
+        },
+        "android.browser.errors.pageBlocked": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "此页面无法在 TwiCC 内打开。重试以返回你的服务器。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.browser.errors.webviewProfiles": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "请更新 Android System WebView 或 Chrome 以使用独立实例。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.browser.errors.linkUnsupported": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "不支持此链接类型。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.browser.errors.browserUnavailable": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "没有可用于打开此链接的浏览器。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.browser.errors.applicationUnavailable": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "没有应用可以打开此链接。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.files.errors.pickerUnavailable": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "没有可用的文件选择器。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.files.errors.folderUnsupported": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "不支持上传文件夹。请改为选择单个文件。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.files.errors.readFailed": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "无法读取所选文件。请重试。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.downloads.browserRequired": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "此下载需要浏览器。请在浏览器中打开此页面以保存 blob 或 data 导出。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.downloads.started": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "下载已开始。请查看 Android 的下载通知。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.downloads.saving": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "正在将 "
+                },
+                {
+                  "type": "named",
+                  "name": "filename"
+                },
+                {
+                  "type": "text",
+                  "value": " 保存到“下载”…"
+                }
+              ],
+              "parameters": [
+                "filename"
+              ]
+            }
+          ],
+          "parameters": [
+            "filename"
+          ],
+          "numberFormats": {}
+        },
+        "android.downloads.saved": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "已将 "
+                },
+                {
+                  "type": "named",
+                  "name": "filename"
+                },
+                {
+                  "type": "text",
+                  "value": " 保存到“下载”。"
+                }
+              ],
+              "parameters": [
+                "filename"
+              ]
+            }
+          ],
+          "parameters": [
+            "filename"
+          ],
+          "numberFormats": {}
+        },
+        "android.downloads.errors.startFailed": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "无法开始下载。请尝试在浏览器中打开此页面。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.downloads.errors.saveUnavailable": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "无法保存此下载。请尝试在浏览器中打开此页面。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.downloads.errors.failed": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "下载失败。请检查网络连接后重试。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.channel": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "时间线语音"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.notificationTitle": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "name"
+                },
+                {
+                  "type": "text",
+                  "value": " · 语音"
+                }
+              ],
+              "parameters": [
+                "name"
+              ]
+            }
+          ],
+          "parameters": [
+            "name"
+          ],
+          "numberFormats": {}
+        },
+        "android.speech.preparing": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "准备中"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.reading": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "正在朗读"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.waiting": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "等待中"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.reconnecting": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "正在重新连接"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.recoveryAnnouncement": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "连接已恢复。中断期间收到的消息不会被朗读。自动朗读将继续。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.stopping": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "正在停止"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.skip": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "跳过"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.stopAll": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "停止"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.pauseTimeline": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "暂停"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.resumeTimeline": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "继续"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.timelinePaused": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "时间线朗读已暂停"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.notificationsRequired": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "请启用语音通知以使用后台的“跳过”和“全部停止”控件。然后重新开始语音。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.batteryTitle": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "时间线收听与电池"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.batteryAdvice": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "无需更改电池设置即可使用时间线收听。在后台或屏幕关闭时，Android 可能会延迟或中断语音。允许 TwiCC 不受限制地使用电池可改善后台收听。你之后可以在“Android 设置 → 应用 → TwiCC → 电池”中更改。\n\n选择“不更改，直接继续”立即开始，或打开设置后再重新启用收听。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.continueWithoutChanges": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "不更改，直接继续"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.settingsTitle": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "需要语音设置"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.openSettings": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "打开设置"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "common.actions.ok": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "确定"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.errors.cookieSupport": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "原生语音需要支持 GET_COOKIE_INFO 的 WebView。请更新 Android System WebView。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.instances.title": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "TwiCC"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.errors.updateRequired": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "语音不可用。请更新 Android 应用后重试。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.errors.staleDocument": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "请重新加载此页面，然后再次尝试语音。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.errors.playbackChanged": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "语音播放已更改。请重试。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.errors.changeFailed": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "无法更改语音播放。请重新加载页面后重试。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.errors.instanceRequired": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "开始语音前请先打开一个已保存的实例。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.errors.credentialsUnavailable": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "请重新打开此实例，然后再次开始语音。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.errors.stopping": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "语音正在停止。请稍候再试。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.errors.staleSession": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "此通知属于旧的语音会话。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.errors.instanceChanged": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "当前实例已更改。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.errors.androidStopped": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "Android 停止了语音。请重新开始。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.errors.instanceClosed": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "当前实例已关闭。请重新开始语音以继续。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.errors.visibleRequired": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "开始语音前请先打开 TwiCC。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.errors.batteryChoiceRequired": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "请在电池建议对话框中选择如何继续。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.errors.generationFailed": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "语音生成失败"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.errors.interrupted": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "音频播放被中断。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.errors.playbackFailed": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "音频播放无法开始。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.errors.retryPlayback": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "无法连接 TwiCC。请重新开始播放。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.errors.failed": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "语音失败"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.errors.audioRequest": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "TTS 请求失败（"
+                },
+                {
+                  "type": "named",
+                  "name": "status"
+                },
+                {
+                  "type": "text",
+                  "value": "）"
+                }
+              ],
+              "parameters": [
+                "status"
+              ]
+            }
+          ],
+          "parameters": [
+            "status"
+          ],
+          "numberFormats": {}
+        },
+        "android.speech.errors.audioEmpty": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "TTS 音频为空"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.speech.errors.audioFormat": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "不支持的语音音频格式"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.push.soundTitle": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "TwiCC — "
+                },
+                {
+                  "type": "named",
+                  "name": "sound"
+                }
+              ],
+              "parameters": [
+                "sound"
+              ]
+            }
+          ],
+          "parameters": [
+            "sound"
+          ],
+          "numberFormats": {}
+        },
+        "settings.notifications.sounds.beep": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "嘟"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "settings.notifications.sounds.chime": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "钟声"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "settings.notifications.sounds.ping": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "叮"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "settings.notifications.sounds.pop": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "啵"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "settings.notifications.sounds.bloop": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "咕噜"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "settings.notifications.sounds.tink": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "叮当"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "settings.notifications.sounds.knock": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "敲击"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "settings.notifications.sounds.sweep": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "扫频"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "settings.notifications.sounds.signal": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "信号"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "settings.notifications.sounds.ripple": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "涟漪"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.push.channels.finished": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "工作完成"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.push.channels.attention": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "问题和审批"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.push.channels.peer": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "对等消息和请求"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.push.distributorLabel": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "TwiCC 通知"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.push.titleWithInstance": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "title"
+                },
+                {
+                  "type": "text",
+                  "value": " · "
+                },
+                {
+                  "type": "named",
+                  "name": "instance"
+                }
+              ],
+              "parameters": [
+                "instance",
+                "title"
+              ]
+            }
+          ],
+          "parameters": [
+            "instance",
+            "title"
+          ],
+          "numberFormats": {}
+        },
+        "android.push.genericTitle": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "TwiCC 通知"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.push.genericBody": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "打开 TwiCC 查看此通知。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.push.errors.updateApp": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "Android 通知不可用。请更新 Android 应用后重试。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.push.errors.updateServer": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "请更新此 TwiCC 服务器以使用详细的 Android 通知。在此之前，通知只显示通用消息。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.push.finishedWithShells": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "finished"
+                },
+                {
+                  "type": "text",
+                  "value": "——"
+                },
+                {
+                  "type": "named",
+                  "name": "shells"
+                }
+              ],
+              "parameters": [
+                "finished",
+                "shells"
+              ]
+            }
+          ],
+          "parameters": [
+            "finished",
+            "shells"
+          ],
+          "numberFormats": {}
+        },
+        "android.push.extraUsageBody": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "sentence"
+                },
+                {
+                  "type": "text",
+                  "value": "\n"
+                },
+                {
+                  "type": "named",
+                  "name": "usage"
+                }
+              ],
+              "parameters": [
+                "sentence",
+                "usage"
+              ]
+            }
+          ],
+          "parameters": [
+            "sentence",
+            "usage"
+          ],
+          "numberFormats": {}
+        },
+        "android.push.peerBody": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "“"
+                },
+                {
+                  "type": "named",
+                  "name": "title"
+                },
+                {
+                  "type": "text",
+                  "value": "”\n"
+                },
+                {
+                  "type": "named",
+                  "name": "preview"
+                }
+              ],
+              "parameters": [
+                "preview",
+                "title"
+              ]
+            }
+          ],
+          "parameters": [
+            "preview",
+            "title"
+          ],
+          "numberFormats": {}
+        },
+        "android.push.peerBodyWithProject": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "message"
+                },
+                {
+                  "type": "text",
+                  "value": "\n项目："
+                },
+                {
+                  "type": "named",
+                  "name": "project"
+                }
+              ],
+              "parameters": [
+                "message",
+                "project"
+              ]
+            }
+          ],
+          "parameters": [
+            "message",
+            "project"
+          ],
+          "numberFormats": {}
+        },
+        "android.push.peerBodyWithSession": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "message"
+                },
+                {
+                  "type": "text",
+                  "value": "\n会话："
+                },
+                {
+                  "type": "named",
+                  "name": "session"
+                }
+              ],
+              "parameters": [
+                "message",
+                "session"
+              ]
+            }
+          ],
+          "parameters": [
+            "message",
+            "session"
+          ],
+          "numberFormats": {}
+        },
+        "android.push.peerRequestBody": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "peer"
+                },
+                {
+                  "type": "text",
+                  "value": " 想要与你的实例配对。\n地址："
+                },
+                {
+                  "type": "named",
+                  "name": "address"
+                }
+              ],
+              "parameters": [
+                "address",
+                "peer"
+              ]
+            }
+          ],
+          "parameters": [
+            "address",
+            "peer"
+          ],
+          "numberFormats": {}
+        },
+        "android.language.errors.unsupported": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "Android 应用中没有此语言。请更新应用后重试。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.language.errors.changed": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "应用语言已更改。请重新选择语言。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.language.errors.invalidRevision": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "应用语言请求无效。请重新加载此页面后重试。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.language.errors.revisionExhausted": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "应用语言无法更改。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.language.errors.saveFailed": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "无法保存应用语言。请重试。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.language.errors.staleDocument": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "更改应用语言前请重新加载此页面。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.language.errors.updateApp": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "请更新 Android 应用以同步界面语言。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.language.errors.updateServer": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "请更新此 TwiCC 服务器以同步界面语言。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "common.actions.save": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "保存"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "common.actions.cancel": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "取消"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "common.actions.retry": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "重试"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "composer.status.startingProvider": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "正在启动 "
+                },
+                {
+                  "type": "named",
+                  "name": "provider"
+                },
+                {
+                  "type": "text",
+                  "value": " 进程..."
+                }
+              ],
+              "parameters": [
+                "provider"
+              ]
+            }
+          ],
+          "parameters": [
+            "provider"
+          ],
+          "numberFormats": {}
+        },
+        "common.sessionCount": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "count"
+                },
+                {
+                  "type": "text",
+                  "value": " 个会话"
+                }
+              ],
+              "parameters": [
+                "count"
+              ]
+            },
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "count"
+                },
+                {
+                  "type": "text",
+                  "value": " 个会话"
+                }
+              ],
+              "parameters": [
+                "count"
+              ]
+            }
+          ],
+          "parameters": [
+            "count"
+          ],
+          "numberFormats": {
+            "count": "decimal"
+          }
+        },
+        "workspace.projectCount": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "count"
+                },
+                {
+                  "type": "text",
+                  "value": " 个项目"
+                }
+              ],
+              "parameters": [
+                "count"
+              ]
+            },
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "count"
+                },
+                {
+                  "type": "text",
+                  "value": " 个项目"
+                }
+              ],
+              "parameters": [
+                "count"
+              ]
+            }
+          ],
+          "parameters": [
+            "count"
+          ],
+          "numberFormats": {
+            "count": "decimal"
+          }
+        },
+        "common.android.errors.actionFailed": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "无法完成此操作。请重新加载此页面后重试。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "common.android.errors.closed": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "与 Android 应用的连接已关闭。请重新加载此页面后重试。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "common.android.errors.invalidNotification": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "无效的通知目标。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "common.android.errors.speechPreparing": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "语音正在准备中。请稍后再试。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "common.android.errors.tooLarge": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "此操作包含的数据过多。请尝试选择更少的内容。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "common.android.errors.unreachable": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "无法联系 Android 应用。请重新加载此页面后重试。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "navigation.android.active": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "活跃"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "navigation.android.browser": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "在浏览器中打开"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "navigation.android.forceRefresh": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "重新加载页面（绕过缓存）"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "navigation.android.manage": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "管理实例"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "navigation.android.menu": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "Android 应用菜单"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "navigation.android.refresh": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "刷新"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "navigation.android.refreshHint": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "重新加载此页面并绕过其资源缓存。你的登录状态和偏好设置会保留。未保存的文本可能会丢失。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "navigation.android.refreshQuestion": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "强制刷新？"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "navigation.android.reload": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "重新加载页面"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "navigation.android.serverHome": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "服务器主页"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "navigation.android.unsupportedState": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "不支持的 Android 应用状态。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.notifications.activityTimeout": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "provider"
+                },
+                {
+                  "type": "text",
+                  "value": " 已停止：3 小时无活动"
+                }
+              ],
+              "parameters": [
+                "provider"
+              ]
+            }
+          ],
+          "parameters": [
+            "provider"
+          ],
+          "numberFormats": {}
+        },
+        "session.notifications.agentStoppedBeforeAck": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "智能体在确认收到你的消息之前就停止了。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.notifications.approval": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "🖐️ "
+                },
+                {
+                  "type": "named",
+                  "name": "provider"
+                },
+                {
+                  "type": "text",
+                  "value": " 需要你的批准"
+                }
+              ],
+              "parameters": [
+                "provider"
+              ]
+            }
+          ],
+          "parameters": [
+            "provider"
+          ],
+          "numberFormats": {}
+        },
+        "session.notifications.attention": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "provider"
+                },
+                {
+                  "type": "text",
+                  "value": " 需要你的关注"
+                }
+              ],
+              "parameters": [
+                "provider"
+              ]
+            }
+          ],
+          "parameters": [
+            "provider"
+          ],
+          "numberFormats": {}
+        },
+        "session.notifications.body": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "项目："
+                },
+                {
+                  "type": "named",
+                  "name": "project"
+                },
+                {
+                  "type": "text",
+                  "value": "\n会话："
+                },
+                {
+                  "type": "named",
+                  "name": "session"
+                }
+              ],
+              "parameters": [
+                "project",
+                "session"
+              ]
+            }
+          ],
+          "parameters": [
+            "project",
+            "session"
+          ],
+          "numberFormats": {}
+        },
+        "session.notifications.creditsRemaining": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "剩余 "
+                },
+                {
+                  "type": "named",
+                  "name": "count"
+                },
+                {
+                  "type": "text",
+                  "value": " 积分。"
+                }
+              ],
+              "parameters": [
+                "count"
+              ]
+            },
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "剩余 "
+                },
+                {
+                  "type": "named",
+                  "name": "count"
+                },
+                {
+                  "type": "text",
+                  "value": " 积分。"
+                }
+              ],
+              "parameters": [
+                "count"
+              ]
+            }
+          ],
+          "parameters": [
+            "count"
+          ],
+          "numberFormats": {
+            "count": "decimal"
+          }
+        },
+        "session.notifications.creditsUsed": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "已用 "
+                },
+                {
+                  "type": "named",
+                  "name": "used"
+                },
+                {
+                  "type": "text",
+                  "value": " 积分。"
+                }
+              ],
+              "parameters": [
+                "used"
+              ]
+            },
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "已用 "
+                },
+                {
+                  "type": "named",
+                  "name": "used"
+                },
+                {
+                  "type": "text",
+                  "value": " 积分。"
+                }
+              ],
+              "parameters": [
+                "used"
+              ]
+            }
+          ],
+          "parameters": [
+            "used"
+          ],
+          "numberFormats": {
+            "used": "decimal"
+          }
+        },
+        "session.notifications.creditsUsedOf": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "已用 "
+                },
+                {
+                  "type": "named",
+                  "name": "used"
+                },
+                {
+                  "type": "text",
+                  "value": " / "
+                },
+                {
+                  "type": "named",
+                  "name": "limit"
+                },
+                {
+                  "type": "text",
+                  "value": " 积分。"
+                }
+              ],
+              "parameters": [
+                "limit",
+                "used"
+              ]
+            },
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "已用 "
+                },
+                {
+                  "type": "named",
+                  "name": "used"
+                },
+                {
+                  "type": "text",
+                  "value": " / "
+                },
+                {
+                  "type": "named",
+                  "name": "limit"
+                },
+                {
+                  "type": "text",
+                  "value": " 积分。"
+                }
+              ],
+              "parameters": [
+                "limit",
+                "used"
+              ]
+            }
+          ],
+          "parameters": [
+            "limit",
+            "used"
+          ],
+          "numberFormats": {
+            "used": "decimal",
+            "limit": "decimal"
+          }
+        },
+        "session.notifications.enabledLabel": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "通知已开启"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.notifications.ephemeral": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "临时会话已完成"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.notifications.ephemeralSession": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "临时会话"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.notifications.errors.update": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "更新会话通知失败"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.notifications.extraUsageSentence": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "provider"
+                },
+                {
+                  "type": "text",
+                  "value": " 目前正在使用你的额外用量积分，在套餐之外另行计费。"
+                }
+              ],
+              "parameters": [
+                "provider"
+              ]
+            }
+          ],
+          "parameters": [
+            "provider"
+          ],
+          "numberFormats": {}
+        },
+        "session.notifications.extraUsageTitle": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "provider"
+                },
+                {
+                  "type": "text",
+                  "value": "——已开始使用额外用量"
+                }
+              ],
+              "parameters": [
+                "provider"
+              ]
+            }
+          ],
+          "parameters": [
+            "provider"
+          ],
+          "numberFormats": {}
+        },
+        "session.notifications.finished": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "provider"
+                },
+                {
+                  "type": "text",
+                  "value": " 已完成工作"
+                }
+              ],
+              "parameters": [
+                "provider"
+              ]
+            }
+          ],
+          "parameters": [
+            "provider"
+          ],
+          "numberFormats": {}
+        },
+        "session.notifications.instance": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "一个实例"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.notifications.invalidTitle": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "标题无效"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.notifications.invalidTitleDetail": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "会话标题无效："
+                },
+                {
+                  "type": "named",
+                  "name": "error"
+                }
+              ],
+              "parameters": [
+                "error"
+              ]
+            }
+          ],
+          "parameters": [
+            "error"
+          ],
+          "numberFormats": {}
+        },
+        "session.notifications.invalidTitleUnknown": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "会话标题无效：未知错误"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.notifications.moneyUsed": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "已用 "
+                },
+                {
+                  "type": "named",
+                  "name": "used"
+                },
+                {
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "type": "named",
+                  "name": "currency"
+                },
+                {
+                  "type": "text",
+                  "value": "。"
+                }
+              ],
+              "parameters": [
+                "currency",
+                "used"
+              ]
+            }
+          ],
+          "parameters": [
+            "currency",
+            "used"
+          ],
+          "numberFormats": {
+            "used": "decimal"
+          }
+        },
+        "session.notifications.moneyUsedOf": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "已用 "
+                },
+                {
+                  "type": "named",
+                  "name": "used"
+                },
+                {
+                  "type": "text",
+                  "value": " / "
+                },
+                {
+                  "type": "named",
+                  "name": "limit"
+                },
+                {
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "type": "named",
+                  "name": "currency"
+                },
+                {
+                  "type": "text",
+                  "value": "。"
+                }
+              ],
+              "parameters": [
+                "currency",
+                "limit",
+                "used"
+              ]
+            }
+          ],
+          "parameters": [
+            "currency",
+            "limit",
+            "used"
+          ],
+          "numberFormats": {
+            "used": "decimal",
+            "limit": "decimal"
+          }
+        },
+        "session.notifications.mute": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "静音"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.notifications.mutedLabel": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "已静音"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.notifications.muteTooltip": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "通知已开启——点击以静音“工作完成”通知，并不再将此会话显示为未读"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.notifications.notConnected": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "未连接"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.notifications.peerAccepted": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "“"
+                },
+                {
+                  "type": "named",
+                  "name": "peer"
+                },
+                {
+                  "type": "text",
+                  "value": "”接受了你的对等请求"
+                }
+              ],
+              "parameters": [
+                "peer"
+              ]
+            }
+          ],
+          "parameters": [
+            "peer"
+          ],
+          "numberFormats": {}
+        },
+        "session.notifications.peerDelivered": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "你发送给“"
+                },
+                {
+                  "type": "named",
+                  "name": "peer"
+                },
+                {
+                  "type": "text",
+                  "value": "”的消息"
+                },
+                {
+                  "type": "named",
+                  "name": "title"
+                },
+                {
+                  "type": "text",
+                  "value": "已投递"
+                }
+              ],
+              "parameters": [
+                "peer",
+                "title"
+              ]
+            }
+          ],
+          "parameters": [
+            "peer",
+            "title"
+          ],
+          "numberFormats": {}
+        },
+        "session.notifications.peerDone": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "“"
+                },
+                {
+                  "type": "named",
+                  "name": "peer"
+                },
+                {
+                  "type": "text",
+                  "value": "”将你的消息"
+                },
+                {
+                  "type": "named",
+                  "name": "title"
+                },
+                {
+                  "type": "text",
+                  "value": "标记为已完成"
+                }
+              ],
+              "parameters": [
+                "peer",
+                "title"
+              ]
+            }
+          ],
+          "parameters": [
+            "peer",
+            "title"
+          ],
+          "numberFormats": {}
+        },
+        "session.notifications.peerMessage": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "来自 "
+                },
+                {
+                  "type": "named",
+                  "name": "peer"
+                },
+                {
+                  "type": "text",
+                  "value": " 的消息"
+                }
+              ],
+              "parameters": [
+                "peer"
+              ]
+            }
+          ],
+          "parameters": [
+            "peer"
+          ],
+          "numberFormats": {}
+        },
+        "session.notifications.peerRefused": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "你发送给“"
+                },
+                {
+                  "type": "named",
+                  "name": "peer"
+                },
+                {
+                  "type": "text",
+                  "value": "”的消息"
+                },
+                {
+                  "type": "named",
+                  "name": "title"
+                },
+                {
+                  "type": "text",
+                  "value": "被拒绝"
+                }
+              ],
+              "parameters": [
+                "peer",
+                "title"
+              ]
+            }
+          ],
+          "parameters": [
+            "peer",
+            "title"
+          ],
+          "numberFormats": {}
+        },
+        "session.notifications.peerReply": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "来自 "
+                },
+                {
+                  "type": "named",
+                  "name": "peer"
+                },
+                {
+                  "type": "text",
+                  "value": " 的回复"
+                }
+              ],
+              "parameters": [
+                "peer"
+              ]
+            }
+          ],
+          "parameters": [
+            "peer"
+          ],
+          "numberFormats": {}
+        },
+        "session.notifications.peerRequest": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "对等请求"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.notifications.peerRequestFrom": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "来自 "
+                },
+                {
+                  "type": "named",
+                  "name": "peer"
+                },
+                {
+                  "type": "text",
+                  "value": " 的对等请求"
+                }
+              ],
+              "parameters": [
+                "peer"
+              ]
+            }
+          ],
+          "parameters": [
+            "peer"
+          ],
+          "numberFormats": {}
+        },
+        "session.notifications.peerVerification": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "“"
+                },
+                {
+                  "type": "named",
+                  "name": "peer"
+                },
+                {
+                  "type": "text",
+                  "value": "”接受了你的请求——完成验证码校验即可激活"
+                }
+              ],
+              "parameters": [
+                "peer"
+              ]
+            }
+          ],
+          "parameters": [
+            "peer"
+          ],
+          "numberFormats": {}
+        },
+        "session.notifications.providerDisabled": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "无法发送到 "
+                },
+                {
+                  "type": "named",
+                  "name": "provider"
+                },
+                {
+                  "type": "text",
+                  "value": "：它已被禁用。请在“设置 → 提供方”中启用。"
+                }
+              ],
+              "parameters": [
+                "provider"
+              ]
+            }
+          ],
+          "parameters": [
+            "provider"
+          ],
+          "numberFormats": {}
+        },
+        "session.notifications.question": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "🖐️ "
+                },
+                {
+                  "type": "named",
+                  "name": "provider"
+                },
+                {
+                  "type": "text",
+                  "value": " 有一个问题要问你"
+                }
+              ],
+              "parameters": [
+                "provider"
+              ]
+            }
+          ],
+          "parameters": [
+            "provider"
+          ],
+          "numberFormats": {}
+        },
+        "session.notifications.settingsInvalid": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "某个设置值无效。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.notifications.shells": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "count"
+                },
+                {
+                  "type": "text",
+                  "value": " 个后台 Shell 仍在运行"
+                }
+              ],
+              "parameters": [
+                "count"
+              ]
+            },
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "count"
+                },
+                {
+                  "type": "text",
+                  "value": " 个后台 Shell 仍在运行"
+                }
+              ],
+              "parameters": [
+                "count"
+              ]
+            }
+          ],
+          "parameters": [
+            "count"
+          ],
+          "numberFormats": {
+            "count": "decimal"
+          }
+        },
+        "session.notifications.startTimeout": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "provider"
+                },
+                {
+                  "type": "text",
+                  "value": " 已停止：1 分钟内未能启动"
+                }
+              ],
+              "parameters": [
+                "provider"
+              ]
+            }
+          ],
+          "parameters": [
+            "provider"
+          ],
+          "numberFormats": {}
+        },
+        "session.notifications.terminated": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "provider"
+                },
+                {
+                  "type": "text",
+                  "value": " 因错误而终止"
+                }
+              ],
+              "parameters": [
+                "provider"
+              ]
+            }
+          ],
+          "parameters": [
+            "provider"
+          ],
+          "numberFormats": {}
+        },
+        "session.notifications.turnFinished": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "provider"
+                },
+                {
+                  "type": "text",
+                  "value": " 完成了本轮"
+                }
+              ],
+              "parameters": [
+                "provider"
+              ]
+            }
+          ],
+          "parameters": [
+            "provider"
+          ],
+          "numberFormats": {}
+        },
+        "session.notifications.unknownError": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "未知错误"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.notifications.unmuteTooltip": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "已静音——点击以恢复“工作完成”通知和未读标记"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.notifications.updateAvailable": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "TwiCC v"
+                },
+                {
+                  "type": "named",
+                  "name": "version"
+                },
+                {
+                  "type": "text",
+                  "value": " 已发布"
+                }
+              ],
+              "parameters": [
+                "version"
+              ]
+            }
+          ],
+          "parameters": [
+            "version"
+          ],
+          "numberFormats": {}
+        },
+        "session.notifications.viewChanges": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "查看变更"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.speech.errors.cut": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "音频在结束前停止了"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.speech.errors.gone": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "音频已不可用"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.speech.errors.identityRequired": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "需要摘要标识"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.speech.errors.initializing": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "原生语音正在初始化。请重试。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.speech.errors.nativeUnavailable": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "原生语音不可用。请重新打开此页面。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.speech.errors.noConfig": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "没有启用的文字转语音配置"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.speech.errors.refused": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "浏览器拒绝播放音频"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.speech.errors.requestFailed": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "请求失败（"
+                },
+                {
+                  "type": "named",
+                  "name": "status"
+                },
+                {
+                  "type": "text",
+                  "value": "）"
+                }
+              ],
+              "parameters": [
+                "status"
+              ]
+            }
+          ],
+          "parameters": [
+            "status"
+          ],
+          "numberFormats": {}
+        },
+        "session.speech.errors.startFailed": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "语音无法启动。请重新加载页面后重试。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.speech.errors.summaryGone": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "摘要已不可用"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.speech.errors.unavailable": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "语音不可用。请重新加载页面后重试。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "session.speech.errors.unreachable": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "无法连接 TwiCC"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.audioGone": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "音频已不可用"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.audioCut": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "音频在结束前停止了"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.textTooLong": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "文本过长，无法发送"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.speedNumber": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "'speed' 必须是有限的正数"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.textRequired": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "'text' 必须是非空字符串"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.modelRequired": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "'model' 必须是非空字符串"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.summaryReference": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "摘要需要且只能有一个引用，不能包含文本或配置测试"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.summarySavedId": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "'saved_summary_id' 必须是正整数"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.summaryFingerprint": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "'summary_result_hash' 必须是已保存结果的指纹"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.summaryHashRequiresSaved": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "'summary_result_hash' 需要 'saved_summary_id'"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.summaryHandle": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "'summary_id' 必须是非空句柄"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.scriptId": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "'script_id' 必须是非空字符串"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.configMatches": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "'config_id' 必须等于 'script_id'"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.summarySavedGone": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "保存的摘要已不可用"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.summaryChanged": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "保存的摘要已更改。朗读前请刷新。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.summaryGone": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "摘要已不可用"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.failed": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "文字转语音失败"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.nothingToRead": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "此文本中没有可朗读的内容"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.configNotSaved": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "此配置尚未保存：请重试"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.configNotValidated": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "此脚本配置未经验证：请在设置中重新测试"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.scriptMissing": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "此脚本配置不存在"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.pcmRateRequired": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "此脚本配置需要 PCM 采样率"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.commandMissing": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "此脚本配置没有命令"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.openrouterTimeout": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "OpenRouter 未能及时响应"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.openrouterUnreachable": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "无法连接 OpenRouter"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.summaryStopped": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "摘要在结束前停止了"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.stopped": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "文字转语音已停止"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.partFormatChanged": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "文本的两个部分之间音频格式发生了变化"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.fieldString": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "'"
+                },
+                {
+                  "type": "named",
+                  "name": "field"
+                },
+                {
+                  "type": "text",
+                  "value": "' 必须是字符串"
+                }
+              ],
+              "parameters": [
+                "field"
+              ]
+            }
+          ],
+          "parameters": [
+            "field"
+          ],
+          "numberFormats": {}
+        },
+        "backend.tts.originChoices": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "'origin' 必须是以下之一："
+                },
+                {
+                  "type": "named",
+                  "name": "choices"
+                }
+              ],
+              "parameters": [
+                "choices"
+              ]
+            }
+          ],
+          "parameters": [
+            "choices"
+          ],
+          "numberFormats": {}
+        },
+        "backend.tts.formatChoices": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "'response_format' 必须是以下之一："
+                },
+                {
+                  "type": "named",
+                  "name": "choices"
+                }
+              ],
+              "parameters": [
+                "choices"
+              ]
+            }
+          ],
+          "parameters": [
+            "choices"
+          ],
+          "numberFormats": {}
+        },
+        "backend.tts.apiKeyRequired": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "未设置 TWICC_OPENROUTER_API_KEY。请将其添加到 "
+                },
+                {
+                  "type": "named",
+                  "name": "path"
+                },
+                {
+                  "type": "text",
+                  "value": " 并重启 TwiCC。"
+                }
+              ],
+              "parameters": [
+                "path"
+              ]
+            }
+          ],
+          "parameters": [
+            "path"
+          ],
+          "numberFormats": {}
+        },
+        "backend.tts.scriptStart": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "脚本无法启动"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.scriptStalled": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "脚本停止发送音频"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.scriptAudioLarge": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "脚本音频过大"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.scriptOutputPath": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "脚本输出不是单个绝对路径"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.scriptPathReused": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "脚本两次返回了相同的路径"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.scriptUnreadable": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "无法读取脚本文件"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.scriptExit": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "脚本失败（退出状态 "
+                },
+                {
+                  "type": "named",
+                  "name": "status"
+                },
+                {
+                  "type": "text",
+                  "value": "）"
+                }
+              ],
+              "parameters": [
+                "status"
+              ]
+            }
+          ],
+          "parameters": [
+            "status"
+          ],
+          "numberFormats": {}
+        },
+        "backend.tts.scriptSignal": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "脚本被信号 "
+                },
+                {
+                  "type": "named",
+                  "name": "signal"
+                },
+                {
+                  "type": "text",
+                  "value": " 停止"
+                }
+              ],
+              "parameters": [
+                "signal"
+              ]
+            }
+          ],
+          "parameters": [
+            "signal"
+          ],
+          "numberFormats": {}
+        },
+        "backend.tts.audioExpired": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "音频在播放前已过期"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.authenticationExpired": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "认证已过期。请打开 TwiCC 并重新登录。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.sessionLost": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "语音已停止。请开始播放或重新开启时间线朗读。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.invalidCommand": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "语音无法启动。请重新加载页面后重试。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.scopeUnavailable": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "时间线朗读已停止。请选择另一个时间线。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.catchupIncomplete": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "部分消息无法加载。请重新开启时间线朗读。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.configurationUnavailable": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "文字转语音不可用。请检查当前启用的配置。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.notMp3": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "脚本输出不是 MP3"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.notWav": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "脚本输出不是 WAV"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.wav16bit": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "脚本 WAV 不是 16 位 PCM"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.wavFormat": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "脚本 WAV 的采样率或声道数不受支持"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.noAudio": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "脚本没有输出音频"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.chooseMp3": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "脚本输出看起来是 MP3：请选择 MP3"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.chooseWav": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "脚本输出看起来是 WAV：请选择 WAV"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.oggUnsupported": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "脚本输出看起来是 Ogg 音频，TwiCC 无法播放"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.flacUnsupported": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "脚本输出看起来是 FLAC 音频，TwiCC 无法播放"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.mp4Unsupported": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "脚本输出看起来是 MP4 音频，TwiCC 无法播放"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.openrouterStatus": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "OpenRouter 返回 HTTP "
+                },
+                {
+                  "type": "named",
+                  "name": "status"
+                }
+              ],
+              "parameters": [
+                "status"
+              ]
+            }
+          ],
+          "parameters": [
+            "status"
+          ],
+          "numberFormats": {}
+        },
+        "backend.tts.provider400Hint": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "提供方返回 400。请检查模型、声音、格式和文本长度。"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "backend.tts.adaptationStopped": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "文本改写在结束前停止了"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "settings.notifications.targets.extraUsage": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "额外用量"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "settings.general.language.label": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "语言"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "peer.toast.unnamedInstance": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "一个实例"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "common.labels.unknown": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "未知"
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": [],
+          "numberFormats": {}
+        },
+        "android.push.projectWithParent": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "parent"
+                },
+                {
+                  "type": "text",
+                  "value": " › "
+                },
+                {
+                  "type": "named",
+                  "name": "project"
+                }
+              ],
+              "parameters": [
+                "parent",
+                "project"
+              ]
+            }
+          ],
+          "parameters": [
+            "parent",
+            "project"
+          ],
+          "numberFormats": {}
+        },
+        "fixture.literal": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "\""
+                },
+                {
+                  "type": "named",
+                  "name": "provider"
+                },
+                {
+                  "type": "text",
+                  "value": "\" isn't "
+                },
+                {
+                  "type": "text",
+                  "value": "|"
+                },
+                {
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "type": "text",
+                  "value": "@"
+                },
+                {
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "type": "text",
+                  "value": "{"
+                },
+                {
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "type": "text",
+                  "value": "}"
+                },
+                {
+                  "type": "text",
+                  "value": "\ncafé 😀 "
+                },
+                {
+                  "type": "text",
+                  "value": "a'b"
+                }
+              ],
+              "parameters": [
+                "provider"
+              ]
+            }
+          ],
+          "parameters": [
+            "provider"
+          ],
+          "numberFormats": {}
+        },
+        "fixture.oneForm": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "Always "
+                },
+                {
+                  "type": "named",
+                  "name": "count"
+                }
+              ],
+              "parameters": [
+                "count"
+              ]
+            }
+          ],
+          "parameters": [
+            "count"
+          ],
+          "numberFormats": {}
+        },
+        "fixture.twoForms": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "count"
+                },
+                {
+                  "type": "text",
+                  "value": " item"
+                }
+              ],
+              "parameters": [
+                "count"
+              ]
+            },
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "count"
+                },
+                {
+                  "type": "text",
+                  "value": " items"
+                }
+              ],
+              "parameters": [
+                "count"
+              ]
+            }
+          ],
+          "parameters": [
+            "count"
+          ],
+          "numberFormats": {}
+        },
+        "fixture.threeForms": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "None"
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "tokens": [
+                {
+                  "type": "text",
+                  "value": "One "
+                },
+                {
+                  "type": "named",
+                  "name": "provider"
+                }
+              ],
+              "parameters": [
+                "provider"
+              ]
+            },
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "count"
+                },
+                {
+                  "type": "text",
+                  "value": " with "
+                },
+                {
+                  "type": "named",
+                  "name": "provider"
+                }
+              ],
+              "parameters": [
+                "count",
+                "provider"
+              ]
+            }
+          ],
+          "parameters": [
+            "count",
+            "provider"
+          ],
+          "numberFormats": {}
+        },
+        "fixture.nested": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "title"
+                },
+                {
+                  "type": "text",
+                  "value": "\n"
+                },
+                {
+                  "type": "named",
+                  "name": "body"
+                }
+              ],
+              "parameters": [
+                "body",
+                "title"
+              ]
+            }
+          ],
+          "parameters": [
+            "body",
+            "title"
+          ],
+          "numberFormats": {}
+        },
+        "fixture.decimal": {
+          "forms": [
+            {
+              "tokens": [
+                {
+                  "type": "named",
+                  "name": "amount"
+                },
+                {
+                  "type": "text",
+                  "value": " / HTTP "
+                },
+                {
+                  "type": "named",
+                  "name": "status"
+                },
+                {
+                  "type": "text",
+                  "value": " / "
+                },
+                {
+                  "type": "named",
+                  "name": "enabled"
+                }
+              ],
+              "parameters": [
+                "amount",
+                "enabled",
+                "status"
+              ]
+            }
+          ],
+          "parameters": [
+            "amount",
+            "enabled",
+            "status"
+          ],
+          "numberFormats": {
+            "amount": "decimal"
+          }
+        }
       }
     }
   },
@@ -39289,6 +44443,2676 @@
         }
       },
       "expected": "12.345,6700 / HTTP 503 / true"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.subtitle",
+        "params": {}
+      },
+      "expected": "通过 HTTPS 隧道连接到你现有的 TwiCC 服务器。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.saved",
+        "params": {}
+      },
+      "expected": "已保存的实例"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.lastUsed",
+        "params": {}
+      },
+      "expected": "上次使用"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.emptyTitle",
+        "params": {}
+      },
+      "expected": "还没有实例"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.emptyBody",
+        "params": {}
+      },
+      "expected": "添加你的 TwiCC 服务器地址即可开始。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.add",
+        "params": {}
+      },
+      "expected": "添加实例"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.editTitle",
+        "params": {}
+      },
+      "expected": "编辑实例"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.nameLabel",
+        "params": {}
+      },
+      "expected": "名称（可选）"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.addressLabel",
+        "params": {}
+      },
+      "expected": "服务器地址"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.addressHint",
+        "params": {}
+      },
+      "expected": "仅限 HTTPS。新地址需要重新登录。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.remove",
+        "params": {}
+      },
+      "expected": "移除"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.removeTitle",
+        "params": {
+          "name": "name: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "移除 name: café 😀 \"quote\" {'|'} @？"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.removeMessage",
+        "params": {}
+      },
+      "expected": "移除此地址，并请求删除其在各引擎中的登录信息和 Web 存储。服务器不受影响。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.openDescription",
+        "params": {
+          "address": "address: café 😀 \"quote\" {'|'} @",
+          "name": "name: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "打开 name: café 😀 \"quote\" {'|'} @，address: café 😀 \"quote\" {'|'} @"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.editDescription",
+        "params": {
+          "name": "name: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "编辑 name: café 😀 \"quote\" {'|'} @"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.removeDescription",
+        "params": {
+          "name": "name: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "移除 name: café 😀 \"quote\" {'|'} @"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.errors.duplicate",
+        "params": {}
+      },
+      "expected": "此服务器地址已保存。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.errors.invalidAddress",
+        "params": {}
+      },
+      "expected": "请输入有效的 HTTPS 地址。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.errors.httpsRequired",
+        "params": {}
+      },
+      "expected": "请使用 HTTPS 地址，例如 https://twicc.example.com。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.errors.originRequired",
+        "params": {}
+      },
+      "expected": "请使用不含凭据、查询或片段的服务器地址。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.errors.rootRequired",
+        "params": {}
+      },
+      "expected": "请使用服务器根地址，不要包含页面路径。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.errors.invalidPort",
+        "params": {}
+      },
+      "expected": "请输入有效的端口号。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.browser.menuDescription",
+        "params": {
+          "name": "name: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "name: café 😀 \"quote\" {'|'} @ 的 Android 应用菜单"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.browser.version",
+        "params": {
+          "engine": "engine: café 😀 \"quote\" {'|'} @",
+          "version": "version: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "TwiCC version: café 😀 \"quote\" {'|'} @ · engine: café 😀 \"quote\" {'|'} @"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.browser.errors.engineStart",
+        "params": {
+          "engine": "engine: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "engine: café 😀 \"quote\" {'|'} @ 无法启动。请检查引擎安装，然后重新打开 TwiCC。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.browser.errors.rendererStopped",
+        "params": {}
+      },
+      "expected": "页面意外停止。重试以重新打开 TwiCC。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.browser.errors.instanceRemoved",
+        "params": {}
+      },
+      "expected": "此实例已不再保存。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.browser.errors.sessionClosed",
+        "params": {}
+      },
+      "expected": "浏览器会话已关闭。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.browser.errors.unreachable",
+        "params": {
+          "name": "name: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "无法连接 name: café 😀 \"quote\" {'|'} @。请检查网络连接和 HTTPS 隧道，然后重试。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.browser.errors.certificate",
+        "params": {}
+      },
+      "expected": "无法验证 HTTPS 证书。请检查隧道证书和手机日期。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.browser.errors.httpStatus",
+        "params": {
+          "status": 503
+        }
+      },
+      "expected": "服务器返回 HTTP 503。请检查隧道或服务器，然后重试。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.browser.errors.pageBlocked",
+        "params": {}
+      },
+      "expected": "此页面无法在 TwiCC 内打开。重试以返回你的服务器。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.browser.errors.webviewProfiles",
+        "params": {}
+      },
+      "expected": "请更新 Android System WebView 或 Chrome 以使用独立实例。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.browser.errors.linkUnsupported",
+        "params": {}
+      },
+      "expected": "不支持此链接类型。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.browser.errors.browserUnavailable",
+        "params": {}
+      },
+      "expected": "没有可用于打开此链接的浏览器。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.browser.errors.applicationUnavailable",
+        "params": {}
+      },
+      "expected": "没有应用可以打开此链接。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.files.errors.pickerUnavailable",
+        "params": {}
+      },
+      "expected": "没有可用的文件选择器。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.files.errors.folderUnsupported",
+        "params": {}
+      },
+      "expected": "不支持上传文件夹。请改为选择单个文件。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.files.errors.readFailed",
+        "params": {}
+      },
+      "expected": "无法读取所选文件。请重试。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.downloads.browserRequired",
+        "params": {}
+      },
+      "expected": "此下载需要浏览器。请在浏览器中打开此页面以保存 blob 或 data 导出。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.downloads.started",
+        "params": {}
+      },
+      "expected": "下载已开始。请查看 Android 的下载通知。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.downloads.saving",
+        "params": {
+          "filename": "filename: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "正在将 filename: café 😀 \"quote\" {'|'} @ 保存到“下载”…"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.downloads.saved",
+        "params": {
+          "filename": "filename: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "已将 filename: café 😀 \"quote\" {'|'} @ 保存到“下载”。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.downloads.errors.startFailed",
+        "params": {}
+      },
+      "expected": "无法开始下载。请尝试在浏览器中打开此页面。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.downloads.errors.saveUnavailable",
+        "params": {}
+      },
+      "expected": "无法保存此下载。请尝试在浏览器中打开此页面。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.downloads.errors.failed",
+        "params": {}
+      },
+      "expected": "下载失败。请检查网络连接后重试。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.channel",
+        "params": {}
+      },
+      "expected": "时间线语音"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.notificationTitle",
+        "params": {
+          "name": "name: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "name: café 😀 \"quote\" {'|'} @ · 语音"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.preparing",
+        "params": {}
+      },
+      "expected": "准备中"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.reading",
+        "params": {}
+      },
+      "expected": "正在朗读"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.waiting",
+        "params": {}
+      },
+      "expected": "等待中"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.reconnecting",
+        "params": {}
+      },
+      "expected": "正在重新连接"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.recoveryAnnouncement",
+        "params": {}
+      },
+      "expected": "连接已恢复。中断期间收到的消息不会被朗读。自动朗读将继续。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.stopping",
+        "params": {}
+      },
+      "expected": "正在停止"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.skip",
+        "params": {}
+      },
+      "expected": "跳过"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.stopAll",
+        "params": {}
+      },
+      "expected": "停止"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.pauseTimeline",
+        "params": {}
+      },
+      "expected": "暂停"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.resumeTimeline",
+        "params": {}
+      },
+      "expected": "继续"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.timelinePaused",
+        "params": {}
+      },
+      "expected": "时间线朗读已暂停"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.notificationsRequired",
+        "params": {}
+      },
+      "expected": "请启用语音通知以使用后台的“跳过”和“全部停止”控件。然后重新开始语音。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.batteryTitle",
+        "params": {}
+      },
+      "expected": "时间线收听与电池"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.batteryAdvice",
+        "params": {}
+      },
+      "expected": "无需更改电池设置即可使用时间线收听。在后台或屏幕关闭时，Android 可能会延迟或中断语音。允许 TwiCC 不受限制地使用电池可改善后台收听。你之后可以在“Android 设置 → 应用 → TwiCC → 电池”中更改。\n\n选择“不更改，直接继续”立即开始，或打开设置后再重新启用收听。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.continueWithoutChanges",
+        "params": {}
+      },
+      "expected": "不更改，直接继续"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.settingsTitle",
+        "params": {}
+      },
+      "expected": "需要语音设置"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.openSettings",
+        "params": {}
+      },
+      "expected": "打开设置"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "common.actions.ok",
+        "params": {}
+      },
+      "expected": "确定"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.errors.cookieSupport",
+        "params": {}
+      },
+      "expected": "原生语音需要支持 GET_COOKIE_INFO 的 WebView。请更新 Android System WebView。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.instances.title",
+        "params": {}
+      },
+      "expected": "TwiCC"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.errors.updateRequired",
+        "params": {}
+      },
+      "expected": "语音不可用。请更新 Android 应用后重试。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.errors.staleDocument",
+        "params": {}
+      },
+      "expected": "请重新加载此页面，然后再次尝试语音。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.errors.playbackChanged",
+        "params": {}
+      },
+      "expected": "语音播放已更改。请重试。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.errors.changeFailed",
+        "params": {}
+      },
+      "expected": "无法更改语音播放。请重新加载页面后重试。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.errors.instanceRequired",
+        "params": {}
+      },
+      "expected": "开始语音前请先打开一个已保存的实例。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.errors.credentialsUnavailable",
+        "params": {}
+      },
+      "expected": "请重新打开此实例，然后再次开始语音。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.errors.stopping",
+        "params": {}
+      },
+      "expected": "语音正在停止。请稍候再试。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.errors.staleSession",
+        "params": {}
+      },
+      "expected": "此通知属于旧的语音会话。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.errors.instanceChanged",
+        "params": {}
+      },
+      "expected": "当前实例已更改。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.errors.androidStopped",
+        "params": {}
+      },
+      "expected": "Android 停止了语音。请重新开始。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.errors.instanceClosed",
+        "params": {}
+      },
+      "expected": "当前实例已关闭。请重新开始语音以继续。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.errors.visibleRequired",
+        "params": {}
+      },
+      "expected": "开始语音前请先打开 TwiCC。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.errors.batteryChoiceRequired",
+        "params": {}
+      },
+      "expected": "请在电池建议对话框中选择如何继续。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.errors.generationFailed",
+        "params": {}
+      },
+      "expected": "语音生成失败"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.errors.interrupted",
+        "params": {}
+      },
+      "expected": "音频播放被中断。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.errors.playbackFailed",
+        "params": {}
+      },
+      "expected": "音频播放无法开始。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.errors.retryPlayback",
+        "params": {}
+      },
+      "expected": "无法连接 TwiCC。请重新开始播放。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.errors.failed",
+        "params": {}
+      },
+      "expected": "语音失败"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.errors.audioRequest",
+        "params": {
+          "status": 503
+        }
+      },
+      "expected": "TTS 请求失败（503）"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.errors.audioEmpty",
+        "params": {}
+      },
+      "expected": "TTS 音频为空"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.speech.errors.audioFormat",
+        "params": {}
+      },
+      "expected": "不支持的语音音频格式"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.push.soundTitle",
+        "params": {
+          "sound": "sound: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "TwiCC — sound: café 😀 \"quote\" {'|'} @"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "settings.notifications.sounds.beep",
+        "params": {}
+      },
+      "expected": "嘟"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "settings.notifications.sounds.chime",
+        "params": {}
+      },
+      "expected": "钟声"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "settings.notifications.sounds.ping",
+        "params": {}
+      },
+      "expected": "叮"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "settings.notifications.sounds.pop",
+        "params": {}
+      },
+      "expected": "啵"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "settings.notifications.sounds.bloop",
+        "params": {}
+      },
+      "expected": "咕噜"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "settings.notifications.sounds.tink",
+        "params": {}
+      },
+      "expected": "叮当"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "settings.notifications.sounds.knock",
+        "params": {}
+      },
+      "expected": "敲击"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "settings.notifications.sounds.sweep",
+        "params": {}
+      },
+      "expected": "扫频"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "settings.notifications.sounds.signal",
+        "params": {}
+      },
+      "expected": "信号"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "settings.notifications.sounds.ripple",
+        "params": {}
+      },
+      "expected": "涟漪"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.push.channels.finished",
+        "params": {}
+      },
+      "expected": "工作完成"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.push.channels.attention",
+        "params": {}
+      },
+      "expected": "问题和审批"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.push.channels.peer",
+        "params": {}
+      },
+      "expected": "对等消息和请求"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.push.distributorLabel",
+        "params": {}
+      },
+      "expected": "TwiCC 通知"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.push.titleWithInstance",
+        "params": {
+          "instance": "instance: café 😀 \"quote\" {'|'} @",
+          "title": "title: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "title: café 😀 \"quote\" {'|'} @ · instance: café 😀 \"quote\" {'|'} @"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.push.genericTitle",
+        "params": {}
+      },
+      "expected": "TwiCC 通知"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.push.genericBody",
+        "params": {}
+      },
+      "expected": "打开 TwiCC 查看此通知。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.push.errors.updateApp",
+        "params": {}
+      },
+      "expected": "Android 通知不可用。请更新 Android 应用后重试。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.push.errors.updateServer",
+        "params": {}
+      },
+      "expected": "请更新此 TwiCC 服务器以使用详细的 Android 通知。在此之前，通知只显示通用消息。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.push.finishedWithShells",
+        "params": {
+          "finished": "finished: café 😀 \"quote\" {'|'} @",
+          "shells": "shells: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "finished: café 😀 \"quote\" {'|'} @——shells: café 😀 \"quote\" {'|'} @"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.push.extraUsageBody",
+        "params": {
+          "sentence": "sentence: café 😀 \"quote\" {'|'} @",
+          "usage": "usage: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "sentence: café 😀 \"quote\" {'|'} @\nusage: café 😀 \"quote\" {'|'} @"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.push.peerBody",
+        "params": {
+          "preview": "preview: café 😀 \"quote\" {'|'} @",
+          "title": "title: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "“title: café 😀 \"quote\" {'|'} @”\npreview: café 😀 \"quote\" {'|'} @"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.push.peerBodyWithProject",
+        "params": {
+          "message": "message: café 😀 \"quote\" {'|'} @",
+          "project": "project: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "message: café 😀 \"quote\" {'|'} @\n项目：project: café 😀 \"quote\" {'|'} @"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.push.peerBodyWithSession",
+        "params": {
+          "message": "message: café 😀 \"quote\" {'|'} @",
+          "session": "session: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "message: café 😀 \"quote\" {'|'} @\n会话：session: café 😀 \"quote\" {'|'} @"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.push.peerRequestBody",
+        "params": {
+          "address": "address: café 😀 \"quote\" {'|'} @",
+          "peer": "peer: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "peer: café 😀 \"quote\" {'|'} @ 想要与你的实例配对。\n地址：address: café 😀 \"quote\" {'|'} @"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.language.errors.unsupported",
+        "params": {}
+      },
+      "expected": "Android 应用中没有此语言。请更新应用后重试。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.language.errors.changed",
+        "params": {}
+      },
+      "expected": "应用语言已更改。请重新选择语言。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.language.errors.invalidRevision",
+        "params": {}
+      },
+      "expected": "应用语言请求无效。请重新加载此页面后重试。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.language.errors.revisionExhausted",
+        "params": {}
+      },
+      "expected": "应用语言无法更改。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.language.errors.saveFailed",
+        "params": {}
+      },
+      "expected": "无法保存应用语言。请重试。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.language.errors.staleDocument",
+        "params": {}
+      },
+      "expected": "更改应用语言前请重新加载此页面。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.language.errors.updateApp",
+        "params": {}
+      },
+      "expected": "请更新 Android 应用以同步界面语言。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.language.errors.updateServer",
+        "params": {}
+      },
+      "expected": "请更新此 TwiCC 服务器以同步界面语言。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "common.actions.save",
+        "params": {}
+      },
+      "expected": "保存"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "common.actions.cancel",
+        "params": {}
+      },
+      "expected": "取消"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "common.actions.retry",
+        "params": {}
+      },
+      "expected": "重试"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "composer.status.startingProvider",
+        "params": {
+          "provider": "Codex"
+        }
+      },
+      "expected": "正在启动 Codex 进程..."
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "common.sessionCount",
+        "params": {
+          "count": 0
+        },
+        "count": 0
+      },
+      "expected": "0 个会话"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "common.sessionCount",
+        "params": {
+          "count": 1
+        },
+        "count": 1
+      },
+      "expected": "1 个会话"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "common.sessionCount",
+        "params": {
+          "count": 2
+        },
+        "count": 2
+      },
+      "expected": "2 个会话"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "common.sessionCount",
+        "params": {
+          "count": 21
+        },
+        "count": 21
+      },
+      "expected": "21 个会话"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "workspace.projectCount",
+        "params": {
+          "count": 0
+        },
+        "count": 0
+      },
+      "expected": "0 个项目"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "workspace.projectCount",
+        "params": {
+          "count": 1
+        },
+        "count": 1
+      },
+      "expected": "1 个项目"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "workspace.projectCount",
+        "params": {
+          "count": 2
+        },
+        "count": 2
+      },
+      "expected": "2 个项目"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "workspace.projectCount",
+        "params": {
+          "count": 21
+        },
+        "count": 21
+      },
+      "expected": "21 个项目"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "common.android.errors.actionFailed",
+        "params": {}
+      },
+      "expected": "无法完成此操作。请重新加载此页面后重试。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "common.android.errors.closed",
+        "params": {}
+      },
+      "expected": "与 Android 应用的连接已关闭。请重新加载此页面后重试。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "common.android.errors.invalidNotification",
+        "params": {}
+      },
+      "expected": "无效的通知目标。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "common.android.errors.speechPreparing",
+        "params": {}
+      },
+      "expected": "语音正在准备中。请稍后再试。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "common.android.errors.tooLarge",
+        "params": {}
+      },
+      "expected": "此操作包含的数据过多。请尝试选择更少的内容。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "common.android.errors.unreachable",
+        "params": {}
+      },
+      "expected": "无法联系 Android 应用。请重新加载此页面后重试。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "navigation.android.active",
+        "params": {}
+      },
+      "expected": "活跃"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "navigation.android.browser",
+        "params": {}
+      },
+      "expected": "在浏览器中打开"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "navigation.android.forceRefresh",
+        "params": {}
+      },
+      "expected": "重新加载页面（绕过缓存）"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "navigation.android.manage",
+        "params": {}
+      },
+      "expected": "管理实例"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "navigation.android.menu",
+        "params": {}
+      },
+      "expected": "Android 应用菜单"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "navigation.android.refresh",
+        "params": {}
+      },
+      "expected": "刷新"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "navigation.android.refreshHint",
+        "params": {}
+      },
+      "expected": "重新加载此页面并绕过其资源缓存。你的登录状态和偏好设置会保留。未保存的文本可能会丢失。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "navigation.android.refreshQuestion",
+        "params": {}
+      },
+      "expected": "强制刷新？"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "navigation.android.reload",
+        "params": {}
+      },
+      "expected": "重新加载页面"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "navigation.android.serverHome",
+        "params": {}
+      },
+      "expected": "服务器主页"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "navigation.android.unsupportedState",
+        "params": {}
+      },
+      "expected": "不支持的 Android 应用状态。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.activityTimeout",
+        "params": {
+          "provider": "Codex"
+        }
+      },
+      "expected": "Codex 已停止：3 小时无活动"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.agentStoppedBeforeAck",
+        "params": {}
+      },
+      "expected": "智能体在确认收到你的消息之前就停止了。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.approval",
+        "params": {
+          "provider": "Codex"
+        }
+      },
+      "expected": "🖐️ Codex 需要你的批准"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.attention",
+        "params": {
+          "provider": "Codex"
+        }
+      },
+      "expected": "Codex 需要你的关注"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.body",
+        "params": {
+          "project": "project: café 😀 \"quote\" {'|'} @",
+          "session": "session: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "项目：project: café 😀 \"quote\" {'|'} @\n会话：session: café 😀 \"quote\" {'|'} @"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.creditsRemaining",
+        "params": {
+          "count": 0
+        },
+        "count": 0
+      },
+      "expected": "剩余 0 积分。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.creditsRemaining",
+        "params": {
+          "count": 1
+        },
+        "count": 1
+      },
+      "expected": "剩余 1 积分。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.creditsRemaining",
+        "params": {
+          "count": 2
+        },
+        "count": 2
+      },
+      "expected": "剩余 2 积分。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.creditsRemaining",
+        "params": {
+          "count": 21
+        },
+        "count": 21
+      },
+      "expected": "剩余 21 积分。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.creditsUsed",
+        "params": {
+          "used": "12345.6700"
+        },
+        "count": 0
+      },
+      "expected": "已用 12,345.6700 积分。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.creditsUsed",
+        "params": {
+          "used": "12345.6700"
+        },
+        "count": 1
+      },
+      "expected": "已用 12,345.6700 积分。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.creditsUsed",
+        "params": {
+          "used": "12345.6700"
+        },
+        "count": 2
+      },
+      "expected": "已用 12,345.6700 积分。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.creditsUsed",
+        "params": {
+          "used": "12345.6700"
+        },
+        "count": 21
+      },
+      "expected": "已用 12,345.6700 积分。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.creditsUsedOf",
+        "params": {
+          "limit": "12345.6700",
+          "used": "12345.6700"
+        },
+        "count": 0
+      },
+      "expected": "已用 12,345.6700 / 12,345.6700 积分。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.creditsUsedOf",
+        "params": {
+          "limit": "12345.6700",
+          "used": "12345.6700"
+        },
+        "count": 1
+      },
+      "expected": "已用 12,345.6700 / 12,345.6700 积分。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.creditsUsedOf",
+        "params": {
+          "limit": "12345.6700",
+          "used": "12345.6700"
+        },
+        "count": 2
+      },
+      "expected": "已用 12,345.6700 / 12,345.6700 积分。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.creditsUsedOf",
+        "params": {
+          "limit": "12345.6700",
+          "used": "12345.6700"
+        },
+        "count": 21
+      },
+      "expected": "已用 12,345.6700 / 12,345.6700 积分。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.enabledLabel",
+        "params": {}
+      },
+      "expected": "通知已开启"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.ephemeral",
+        "params": {}
+      },
+      "expected": "临时会话已完成"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.ephemeralSession",
+        "params": {}
+      },
+      "expected": "临时会话"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.errors.update",
+        "params": {}
+      },
+      "expected": "更新会话通知失败"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.extraUsageSentence",
+        "params": {
+          "provider": "Codex"
+        }
+      },
+      "expected": "Codex 目前正在使用你的额外用量积分，在套餐之外另行计费。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.extraUsageTitle",
+        "params": {
+          "provider": "Codex"
+        }
+      },
+      "expected": "Codex——已开始使用额外用量"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.finished",
+        "params": {
+          "provider": "Codex"
+        }
+      },
+      "expected": "Codex 已完成工作"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.instance",
+        "params": {}
+      },
+      "expected": "一个实例"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.invalidTitle",
+        "params": {}
+      },
+      "expected": "标题无效"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.invalidTitleDetail",
+        "params": {
+          "error": "error: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "会话标题无效：error: café 😀 \"quote\" {'|'} @"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.invalidTitleUnknown",
+        "params": {}
+      },
+      "expected": "会话标题无效：未知错误"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.moneyUsed",
+        "params": {
+          "currency": "currency: café 😀 \"quote\" {'|'} @",
+          "used": "12345.6700"
+        }
+      },
+      "expected": "已用 12,345.6700 currency: café 😀 \"quote\" {'|'} @。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.moneyUsedOf",
+        "params": {
+          "currency": "currency: café 😀 \"quote\" {'|'} @",
+          "limit": "12345.6700",
+          "used": "12345.6700"
+        }
+      },
+      "expected": "已用 12,345.6700 / 12,345.6700 currency: café 😀 \"quote\" {'|'} @。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.mute",
+        "params": {}
+      },
+      "expected": "静音"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.mutedLabel",
+        "params": {}
+      },
+      "expected": "已静音"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.muteTooltip",
+        "params": {}
+      },
+      "expected": "通知已开启——点击以静音“工作完成”通知，并不再将此会话显示为未读"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.notConnected",
+        "params": {}
+      },
+      "expected": "未连接"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.peerAccepted",
+        "params": {
+          "peer": "peer: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "“peer: café 😀 \"quote\" {'|'} @”接受了你的对等请求"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.peerDelivered",
+        "params": {
+          "peer": "peer: café 😀 \"quote\" {'|'} @",
+          "title": "title: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "你发送给“peer: café 😀 \"quote\" {'|'} @”的消息title: café 😀 \"quote\" {'|'} @已投递"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.peerDone",
+        "params": {
+          "peer": "peer: café 😀 \"quote\" {'|'} @",
+          "title": "title: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "“peer: café 😀 \"quote\" {'|'} @”将你的消息title: café 😀 \"quote\" {'|'} @标记为已完成"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.peerMessage",
+        "params": {
+          "peer": "peer: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "来自 peer: café 😀 \"quote\" {'|'} @ 的消息"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.peerRefused",
+        "params": {
+          "peer": "peer: café 😀 \"quote\" {'|'} @",
+          "title": "title: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "你发送给“peer: café 😀 \"quote\" {'|'} @”的消息title: café 😀 \"quote\" {'|'} @被拒绝"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.peerReply",
+        "params": {
+          "peer": "peer: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "来自 peer: café 😀 \"quote\" {'|'} @ 的回复"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.peerRequest",
+        "params": {}
+      },
+      "expected": "对等请求"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.peerRequestFrom",
+        "params": {
+          "peer": "peer: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "来自 peer: café 😀 \"quote\" {'|'} @ 的对等请求"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.peerVerification",
+        "params": {
+          "peer": "peer: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "“peer: café 😀 \"quote\" {'|'} @”接受了你的请求——完成验证码校验即可激活"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.providerDisabled",
+        "params": {
+          "provider": "Codex"
+        }
+      },
+      "expected": "无法发送到 Codex：它已被禁用。请在“设置 → 提供方”中启用。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.question",
+        "params": {
+          "provider": "Codex"
+        }
+      },
+      "expected": "🖐️ Codex 有一个问题要问你"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.settingsInvalid",
+        "params": {}
+      },
+      "expected": "某个设置值无效。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.shells",
+        "params": {
+          "count": 0
+        },
+        "count": 0
+      },
+      "expected": "0 个后台 Shell 仍在运行"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.shells",
+        "params": {
+          "count": 1
+        },
+        "count": 1
+      },
+      "expected": "1 个后台 Shell 仍在运行"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.shells",
+        "params": {
+          "count": 2
+        },
+        "count": 2
+      },
+      "expected": "2 个后台 Shell 仍在运行"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.shells",
+        "params": {
+          "count": 21
+        },
+        "count": 21
+      },
+      "expected": "21 个后台 Shell 仍在运行"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.startTimeout",
+        "params": {
+          "provider": "Codex"
+        }
+      },
+      "expected": "Codex 已停止：1 分钟内未能启动"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.terminated",
+        "params": {
+          "provider": "Codex"
+        }
+      },
+      "expected": "Codex 因错误而终止"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.turnFinished",
+        "params": {
+          "provider": "Codex"
+        }
+      },
+      "expected": "Codex 完成了本轮"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.unknownError",
+        "params": {}
+      },
+      "expected": "未知错误"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.unmuteTooltip",
+        "params": {}
+      },
+      "expected": "已静音——点击以恢复“工作完成”通知和未读标记"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.updateAvailable",
+        "params": {
+          "version": "version: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "TwiCC vversion: café 😀 \"quote\" {'|'} @ 已发布"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.notifications.viewChanges",
+        "params": {}
+      },
+      "expected": "查看变更"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.speech.errors.cut",
+        "params": {}
+      },
+      "expected": "音频在结束前停止了"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.speech.errors.gone",
+        "params": {}
+      },
+      "expected": "音频已不可用"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.speech.errors.identityRequired",
+        "params": {}
+      },
+      "expected": "需要摘要标识"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.speech.errors.initializing",
+        "params": {}
+      },
+      "expected": "原生语音正在初始化。请重试。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.speech.errors.nativeUnavailable",
+        "params": {}
+      },
+      "expected": "原生语音不可用。请重新打开此页面。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.speech.errors.noConfig",
+        "params": {}
+      },
+      "expected": "没有启用的文字转语音配置"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.speech.errors.refused",
+        "params": {}
+      },
+      "expected": "浏览器拒绝播放音频"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.speech.errors.requestFailed",
+        "params": {
+          "status": 503
+        }
+      },
+      "expected": "请求失败（503）"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.speech.errors.startFailed",
+        "params": {}
+      },
+      "expected": "语音无法启动。请重新加载页面后重试。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.speech.errors.summaryGone",
+        "params": {}
+      },
+      "expected": "摘要已不可用"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.speech.errors.unavailable",
+        "params": {}
+      },
+      "expected": "语音不可用。请重新加载页面后重试。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "session.speech.errors.unreachable",
+        "params": {}
+      },
+      "expected": "无法连接 TwiCC"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.audioGone",
+        "params": {}
+      },
+      "expected": "音频已不可用"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.audioCut",
+        "params": {}
+      },
+      "expected": "音频在结束前停止了"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.textTooLong",
+        "params": {}
+      },
+      "expected": "文本过长，无法发送"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.speedNumber",
+        "params": {}
+      },
+      "expected": "'speed' 必须是有限的正数"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.textRequired",
+        "params": {}
+      },
+      "expected": "'text' 必须是非空字符串"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.modelRequired",
+        "params": {}
+      },
+      "expected": "'model' 必须是非空字符串"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.summaryReference",
+        "params": {}
+      },
+      "expected": "摘要需要且只能有一个引用，不能包含文本或配置测试"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.summarySavedId",
+        "params": {}
+      },
+      "expected": "'saved_summary_id' 必须是正整数"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.summaryFingerprint",
+        "params": {}
+      },
+      "expected": "'summary_result_hash' 必须是已保存结果的指纹"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.summaryHashRequiresSaved",
+        "params": {}
+      },
+      "expected": "'summary_result_hash' 需要 'saved_summary_id'"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.summaryHandle",
+        "params": {}
+      },
+      "expected": "'summary_id' 必须是非空句柄"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.scriptId",
+        "params": {}
+      },
+      "expected": "'script_id' 必须是非空字符串"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.configMatches",
+        "params": {}
+      },
+      "expected": "'config_id' 必须等于 'script_id'"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.summarySavedGone",
+        "params": {}
+      },
+      "expected": "保存的摘要已不可用"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.summaryChanged",
+        "params": {}
+      },
+      "expected": "保存的摘要已更改。朗读前请刷新。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.summaryGone",
+        "params": {}
+      },
+      "expected": "摘要已不可用"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.failed",
+        "params": {}
+      },
+      "expected": "文字转语音失败"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.nothingToRead",
+        "params": {}
+      },
+      "expected": "此文本中没有可朗读的内容"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.configNotSaved",
+        "params": {}
+      },
+      "expected": "此配置尚未保存：请重试"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.configNotValidated",
+        "params": {}
+      },
+      "expected": "此脚本配置未经验证：请在设置中重新测试"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.scriptMissing",
+        "params": {}
+      },
+      "expected": "此脚本配置不存在"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.pcmRateRequired",
+        "params": {}
+      },
+      "expected": "此脚本配置需要 PCM 采样率"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.commandMissing",
+        "params": {}
+      },
+      "expected": "此脚本配置没有命令"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.openrouterTimeout",
+        "params": {}
+      },
+      "expected": "OpenRouter 未能及时响应"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.openrouterUnreachable",
+        "params": {}
+      },
+      "expected": "无法连接 OpenRouter"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.summaryStopped",
+        "params": {}
+      },
+      "expected": "摘要在结束前停止了"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.stopped",
+        "params": {}
+      },
+      "expected": "文字转语音已停止"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.partFormatChanged",
+        "params": {}
+      },
+      "expected": "文本的两个部分之间音频格式发生了变化"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.fieldString",
+        "params": {
+          "field": "field: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "'field: café 😀 \"quote\" {'|'} @' 必须是字符串"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.originChoices",
+        "params": {
+          "choices": "choices: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "'origin' 必须是以下之一：choices: café 😀 \"quote\" {'|'} @"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.formatChoices",
+        "params": {
+          "choices": "choices: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "'response_format' 必须是以下之一：choices: café 😀 \"quote\" {'|'} @"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.apiKeyRequired",
+        "params": {
+          "path": "path: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "未设置 TWICC_OPENROUTER_API_KEY。请将其添加到 path: café 😀 \"quote\" {'|'} @ 并重启 TwiCC。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.scriptStart",
+        "params": {}
+      },
+      "expected": "脚本无法启动"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.scriptStalled",
+        "params": {}
+      },
+      "expected": "脚本停止发送音频"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.scriptAudioLarge",
+        "params": {}
+      },
+      "expected": "脚本音频过大"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.scriptOutputPath",
+        "params": {}
+      },
+      "expected": "脚本输出不是单个绝对路径"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.scriptPathReused",
+        "params": {}
+      },
+      "expected": "脚本两次返回了相同的路径"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.scriptUnreadable",
+        "params": {}
+      },
+      "expected": "无法读取脚本文件"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.scriptExit",
+        "params": {
+          "status": 503
+        }
+      },
+      "expected": "脚本失败（退出状态 503）"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.scriptSignal",
+        "params": {
+          "signal": "signal: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "脚本被信号 signal: café 😀 \"quote\" {'|'} @ 停止"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.audioExpired",
+        "params": {}
+      },
+      "expected": "音频在播放前已过期"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.authenticationExpired",
+        "params": {}
+      },
+      "expected": "认证已过期。请打开 TwiCC 并重新登录。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.sessionLost",
+        "params": {}
+      },
+      "expected": "语音已停止。请开始播放或重新开启时间线朗读。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.invalidCommand",
+        "params": {}
+      },
+      "expected": "语音无法启动。请重新加载页面后重试。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.scopeUnavailable",
+        "params": {}
+      },
+      "expected": "时间线朗读已停止。请选择另一个时间线。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.catchupIncomplete",
+        "params": {}
+      },
+      "expected": "部分消息无法加载。请重新开启时间线朗读。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.configurationUnavailable",
+        "params": {}
+      },
+      "expected": "文字转语音不可用。请检查当前启用的配置。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.notMp3",
+        "params": {}
+      },
+      "expected": "脚本输出不是 MP3"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.notWav",
+        "params": {}
+      },
+      "expected": "脚本输出不是 WAV"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.wav16bit",
+        "params": {}
+      },
+      "expected": "脚本 WAV 不是 16 位 PCM"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.wavFormat",
+        "params": {}
+      },
+      "expected": "脚本 WAV 的采样率或声道数不受支持"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.noAudio",
+        "params": {}
+      },
+      "expected": "脚本没有输出音频"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.chooseMp3",
+        "params": {}
+      },
+      "expected": "脚本输出看起来是 MP3：请选择 MP3"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.chooseWav",
+        "params": {}
+      },
+      "expected": "脚本输出看起来是 WAV：请选择 WAV"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.oggUnsupported",
+        "params": {}
+      },
+      "expected": "脚本输出看起来是 Ogg 音频，TwiCC 无法播放"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.flacUnsupported",
+        "params": {}
+      },
+      "expected": "脚本输出看起来是 FLAC 音频，TwiCC 无法播放"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.mp4Unsupported",
+        "params": {}
+      },
+      "expected": "脚本输出看起来是 MP4 音频，TwiCC 无法播放"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.openrouterStatus",
+        "params": {
+          "status": 503
+        }
+      },
+      "expected": "OpenRouter 返回 HTTP 503"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.provider400Hint",
+        "params": {}
+      },
+      "expected": "提供方返回 400。请检查模型、声音、格式和文本长度。"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "backend.tts.adaptationStopped",
+        "params": {}
+      },
+      "expected": "文本改写在结束前停止了"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "settings.notifications.targets.extraUsage",
+        "params": {}
+      },
+      "expected": "额外用量"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "settings.general.language.label",
+        "params": {}
+      },
+      "expected": "语言"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "peer.toast.unnamedInstance",
+        "params": {}
+      },
+      "expected": "一个实例"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "common.labels.unknown",
+        "params": {}
+      },
+      "expected": "未知"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "android.push.projectWithParent",
+        "params": {
+          "parent": "parent: café 😀 \"quote\" {'|'} @",
+          "project": "project: café 😀 \"quote\" {'|'} @"
+        }
+      },
+      "expected": "parent: café 😀 \"quote\" {'|'} @ › project: café 😀 \"quote\" {'|'} @"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "fixture.literal",
+        "params": {
+          "provider": "Codex"
+        }
+      },
+      "expected": "\"Codex\" isn't | @ { }\ncafé 😀 a'b"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "fixture.oneForm",
+        "params": {
+          "count": 0
+        },
+        "count": 0
+      },
+      "expected": "Always 0"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "fixture.oneForm",
+        "params": {
+          "count": 1
+        },
+        "count": 1
+      },
+      "expected": "Always 1"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "fixture.oneForm",
+        "params": {
+          "count": 2
+        },
+        "count": 2
+      },
+      "expected": "Always 2"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "fixture.oneForm",
+        "params": {
+          "count": 21
+        },
+        "count": 21
+      },
+      "expected": "Always 21"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "fixture.twoForms",
+        "params": {
+          "count": 0
+        },
+        "count": 0
+      },
+      "expected": "0 items"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "fixture.twoForms",
+        "params": {
+          "count": 1
+        },
+        "count": 1
+      },
+      "expected": "1 item"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "fixture.twoForms",
+        "params": {
+          "count": 2
+        },
+        "count": 2
+      },
+      "expected": "2 items"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "fixture.twoForms",
+        "params": {
+          "count": 21
+        },
+        "count": 21
+      },
+      "expected": "21 items"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "fixture.threeForms",
+        "params": {
+          "count": 0,
+          "provider": "Codex"
+        },
+        "count": 0
+      },
+      "expected": "None"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "fixture.threeForms",
+        "params": {
+          "count": 1,
+          "provider": "Codex"
+        },
+        "count": 1
+      },
+      "expected": "One Codex"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "fixture.threeForms",
+        "params": {
+          "count": 2,
+          "provider": "Codex"
+        },
+        "count": 2
+      },
+      "expected": "2 with Codex"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "fixture.threeForms",
+        "params": {
+          "count": 21,
+          "provider": "Codex"
+        },
+        "count": 21
+      },
+      "expected": "21 with Codex"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "fixture.nested",
+        "params": {
+          "body": {
+            "key": "fixture.literal",
+            "params": {
+              "provider": "Claude Code"
+            }
+          },
+          "title": {
+            "key": "composer.status.startingProvider",
+            "params": {
+              "provider": "Codex"
+            }
+          }
+        }
+      },
+      "expected": "正在启动 Codex 进程...\n\"Claude Code\" isn't | @ { }\ncafé 😀 a'b"
+    },
+    {
+      "locale": "zh-CN",
+      "message": {
+        "key": "fixture.decimal",
+        "params": {
+          "amount": "12345.6700",
+          "enabled": true,
+          "status": 503
+        }
+      },
+      "expected": "12,345.6700 / HTTP 503 / true"
     }
   ],
   "invalidSources": [

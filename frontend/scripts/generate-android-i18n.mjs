@@ -7,7 +7,7 @@ import { createAndroidFingerprints } from './android-i18n-fingerprints.mjs'
 import { generateAndroidTestFixtures } from './generate-android-test-fixtures.mjs'
 
 const root = fileURLToPath(new URL('../../', import.meta.url))
-const supportedLocales = ['en', 'de', 'es', 'fr', 'pt-BR']
+const supportedLocales = ['en', 'de', 'es', 'fr', 'pt-BR', 'zh-CN']
 const manifestPath = 'android/i18n/messages.json'
 const generatorPath = 'frontend/scripts/generate-android-i18n.mjs'
 const catalogPath = 'android/app/src/main/assets/i18n/messages.json'

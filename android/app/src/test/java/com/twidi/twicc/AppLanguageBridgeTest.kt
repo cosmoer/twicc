@@ -31,7 +31,7 @@ class AppLanguageBridgeTest {
         assertEquals("en", state.getString("locale"))
         assertEquals(0L, state.getLong("revision"))
         val supportedLocales = state.getJSONArray("supportedLocales")
-        assertEquals(listOf("en", "de", "es", "fr", "pt-BR"),
+        assertEquals(listOf("en", "de", "es", "fr", "pt-BR", "zh-CN"),
             (0 until supportedLocales.length()).map { supportedLocales.getString(it) })
         val full = f.request("getState").getJSONObject("state")
         assertEquals(1, full.getJSONObject("capabilities").getInt("appLanguage"))

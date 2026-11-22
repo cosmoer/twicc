@@ -8,19 +8,49 @@ export const SUPPORTED_LOCALES = Object.freeze([
     { value: 'es', label: 'Español' },
     { value: 'fr', label: 'Français' },
     { value: 'pt-BR', label: 'Português (Brasil)' },
+    { value: 'zh-CN', label: '简体中文' },
 ])
 
 export function isSupportedLocale(value) {
     return SUPPORTED_LOCALES.some(locale => locale.value === value)
 }
 
+// Map one BCP 47 tag to a supported locale. Simplified Chinese covers zh, zh-CN,
+// zh-SG, zh-MY and any zh-Hans tag; Traditional Chinese (zh-TW, zh-HK, zh-MO,
+// zh-Hant) is not mapped, so the next preferred browser language applies.
+export function matchSupportedLocale(tag) {
+    if (typeof tag !== 'string' || !tag) return null
+    const lower = tag.replace(/_/g, '-').toLowerCase()
+    const exact = SUPPORTED_LOCALES.find(locale => locale.value.toLowerCase() === lower)
+    if (exact) return exact.value
+    const [language, ...subtags] = lower.split('-')
+    if (language === 'zh') {
+        if (subtags.includes('hant') || subtags.some(subtag => ['tw', 'hk', 'mo'].includes(subtag))) return null
+        return 'zh-CN'
+    }
+    if (language === 'pt') return 'pt-BR'
+    return SUPPORTED_LOCALES.find(locale => locale.value === language)?.value ?? null
+}
+
+// Only browsers report preferred languages: Node tests and workers keep English.
+export function detectBrowserLocale(languages) {
+    languages ??= typeof window === 'undefined' ? [] : (window.navigator?.languages?.length
+        ? window.navigator.languages : [window.navigator?.language])
+    for (const tag of languages) {
+        const locale = matchSupportedLocale(tag)
+        if (locale) return locale
+    }
+    return DEFAULT_LOCALE
+}
+
 // Read only this local preference before authentication/bootstrap, so the login
 // screen also uses the saved language. The settings store owns persistence.
+// Without a saved preference, the browser's preferred languages decide.
 export function readInitialLocale(storage) {
     try {
         storage ??= globalThis.localStorage
         const value = JSON.parse(storage?.getItem('twicc-settings') || '{}')?.locale
-        return isSupportedLocale(value) ? value : DEFAULT_LOCALE
+        return isSupportedLocale(value) ? value : detectBrowserLocale()
     } catch {
         return DEFAULT_LOCALE
     }
@@ -58,6 +88,14 @@ const localeLoaders = {
             import('./locales/pt-BR.js'),
             import('dayjs/locale/pt-br.js'),
             typeof window === 'undefined' ? null : import('@awesome.me/webawesome/dist/translations/pt.js'),
+        ])
+        return messages.default
+    },
+    'zh-CN': async () => {
+        const [messages] = await Promise.all([
+            import('./locales/zh-CN.js'),
+            import('dayjs/locale/zh-cn.js'),
+            typeof window === 'undefined' ? null : import('@awesome.me/webawesome/dist/translations/zh-cn.js'),
         ])
         return messages.default
     },

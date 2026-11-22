@@ -9370,7 +9370,370 @@ var Dh, Oh, kh, Ah, jh, Mh, Nh = o((() => {
 		zoomIn: "Aumentar zoom",
 		zoomOut: "Diminuir zoom"
 	}, Th(pg), mg = pg;
-})), gg = Object.freeze([
+})), gg, _g = o((() => {
+	gg = {
+		"android.browser.errors.applicationUnavailable": "没有应用可以打开此链接。",
+		"android.browser.errors.browserUnavailable": "没有可用于打开此链接的浏览器。",
+		"android.browser.errors.certificate": "无法验证 HTTPS 证书。请检查隧道证书和手机日期。",
+		"android.browser.errors.engineStart": "{engine} 无法启动。请检查引擎安装，然后重新打开 TwiCC。",
+		"android.browser.errors.httpStatus": "服务器返回 HTTP {status}。请检查隧道或服务器，然后重试。",
+		"android.browser.errors.instanceRemoved": "此实例已不再保存。",
+		"android.browser.errors.linkUnsupported": "不支持此链接类型。",
+		"android.browser.errors.pageBlocked": "此页面无法在 TwiCC 内打开。重试以返回你的服务器。",
+		"android.browser.errors.rendererStopped": "页面意外停止。重试以重新打开 TwiCC。",
+		"android.browser.errors.sessionClosed": "浏览器会话已关闭。",
+		"android.browser.errors.unreachable": "无法连接 {name}。请检查网络连接和 HTTPS 隧道，然后重试。",
+		"android.browser.errors.webviewProfiles": "请更新 Android System WebView 或 Chrome 以使用独立实例。",
+		"android.browser.menuDescription": "{name} 的 Android 应用菜单",
+		"android.browser.version": "TwiCC {version} · {engine}",
+		"android.downloads.browserRequired": "此下载需要浏览器。请在浏览器中打开此页面以保存 blob 或 data 导出。",
+		"android.downloads.errors.failed": "下载失败。请检查网络连接后重试。",
+		"android.downloads.errors.saveUnavailable": "无法保存此下载。请尝试在浏览器中打开此页面。",
+		"android.downloads.errors.startFailed": "无法开始下载。请尝试在浏览器中打开此页面。",
+		"android.downloads.saved": "已将 {filename} 保存到“下载”。",
+		"android.downloads.saving": "正在将 {filename} 保存到“下载”…",
+		"android.downloads.started": "下载已开始。请查看 Android 的下载通知。",
+		"android.files.errors.folderUnsupported": "不支持上传文件夹。请改为选择单个文件。",
+		"android.files.errors.pickerUnavailable": "没有可用的文件选择器。",
+		"android.files.errors.readFailed": "无法读取所选文件。请重试。",
+		"android.instances.add": "添加实例",
+		"android.instances.addressHint": "仅限 HTTPS。新地址需要重新登录。",
+		"android.instances.addressLabel": "服务器地址",
+		"android.instances.editDescription": "编辑 {name}",
+		"android.instances.editTitle": "编辑实例",
+		"android.instances.emptyBody": "添加你的 TwiCC 服务器地址即可开始。",
+		"android.instances.emptyTitle": "还没有实例",
+		"android.instances.errors.duplicate": "此服务器地址已保存。",
+		"android.instances.errors.httpsRequired": "请使用 HTTPS 地址，例如 https://twicc.example.com。",
+		"android.instances.errors.invalidAddress": "请输入有效的 HTTPS 地址。",
+		"android.instances.errors.invalidPort": "请输入有效的端口号。",
+		"android.instances.errors.originRequired": "请使用不含凭据、查询或片段的服务器地址。",
+		"android.instances.errors.rootRequired": "请使用服务器根地址，不要包含页面路径。",
+		"android.instances.lastUsed": "上次使用",
+		"android.instances.nameLabel": "名称（可选）",
+		"android.instances.openDescription": "打开 {name}，{address}",
+		"android.instances.remove": "移除",
+		"android.instances.removeDescription": "移除 {name}",
+		"android.instances.removeMessage": "移除此地址，并请求删除其在各引擎中的登录信息和 Web 存储。服务器不受影响。",
+		"android.instances.removeTitle": "移除 {name}？",
+		"android.instances.saved": "已保存的实例",
+		"android.instances.subtitle": "通过 HTTPS 隧道连接到你现有的 TwiCC 服务器。",
+		"android.instances.title": "TwiCC",
+		"android.language.errors.changed": "应用语言已更改。请重新选择语言。",
+		"android.language.errors.invalidRevision": "应用语言请求无效。请重新加载此页面后重试。",
+		"android.language.errors.revisionExhausted": "应用语言无法更改。",
+		"android.language.errors.saveFailed": "无法保存应用语言。请重试。",
+		"android.language.errors.staleDocument": "更改应用语言前请重新加载此页面。",
+		"android.language.errors.unsupported": "Android 应用中没有此语言。请更新应用后重试。",
+		"android.language.errors.updateApp": "请更新 Android 应用以同步界面语言。",
+		"android.language.errors.updateServer": "请更新此 TwiCC 服务器以同步界面语言。",
+		"android.push.channels.attention": "问题和审批",
+		"android.push.channels.finished": "工作完成",
+		"android.push.channels.peer": "对等消息和请求",
+		"android.push.distributorLabel": "TwiCC 通知",
+		"android.push.errors.updateApp": "Android 通知不可用。请更新 Android 应用后重试。",
+		"android.push.errors.updateServer": "请更新此 TwiCC 服务器以使用详细的 Android 通知。在此之前，通知只显示通用消息。",
+		"android.push.extraUsageBody": "{sentence}\n{usage}",
+		"android.push.finishedWithShells": "{finished}——{shells}",
+		"android.push.genericBody": "打开 TwiCC 查看此通知。",
+		"android.push.genericTitle": "TwiCC 通知",
+		"android.push.peerBody": "“{title}”\n{preview}",
+		"android.push.peerBodyWithProject": "{message}\n项目：{project}",
+		"android.push.peerBodyWithSession": "{message}\n会话：{session}",
+		"android.push.peerRequestBody": "{peer} 想要与你的实例配对。\n地址：{address}",
+		"android.push.projectWithParent": "{parent} › {project}",
+		"android.push.soundTitle": "TwiCC — {sound}",
+		"android.push.titleWithInstance": "{title} · {instance}",
+		"android.speech.batteryAdvice": "无需更改电池设置即可使用时间线收听。在后台或屏幕关闭时，Android 可能会延迟或中断语音。允许 TwiCC 不受限制地使用电池可改善后台收听。你之后可以在“Android 设置 → 应用 → TwiCC → 电池”中更改。\n\n选择“不更改，直接继续”立即开始，或打开设置后再重新启用收听。",
+		"android.speech.batteryTitle": "时间线收听与电池",
+		"android.speech.channel": "时间线语音",
+		"android.speech.continueWithoutChanges": "不更改，直接继续",
+		"android.speech.errors.androidStopped": "Android 停止了语音。请重新开始。",
+		"android.speech.errors.audioEmpty": "TTS 音频为空",
+		"android.speech.errors.audioFormat": "不支持的语音音频格式",
+		"android.speech.errors.audioRequest": "TTS 请求失败（{status}）",
+		"android.speech.errors.batteryChoiceRequired": "请在电池建议对话框中选择如何继续。",
+		"android.speech.errors.changeFailed": "无法更改语音播放。请重新加载页面后重试。",
+		"android.speech.errors.cookieSupport": "原生语音需要支持 GET_COOKIE_INFO 的 WebView。请更新 Android System WebView。",
+		"android.speech.errors.credentialsUnavailable": "请重新打开此实例，然后再次开始语音。",
+		"android.speech.errors.failed": "语音失败",
+		"android.speech.errors.generationFailed": "语音生成失败",
+		"android.speech.errors.instanceChanged": "当前实例已更改。",
+		"android.speech.errors.instanceClosed": "当前实例已关闭。请重新开始语音以继续。",
+		"android.speech.errors.instanceRequired": "开始语音前请先打开一个已保存的实例。",
+		"android.speech.errors.interrupted": "音频播放被中断。",
+		"android.speech.errors.playbackChanged": "语音播放已更改。请重试。",
+		"android.speech.errors.playbackFailed": "音频播放无法开始。",
+		"android.speech.errors.retryPlayback": "无法连接 TwiCC。请重新开始播放。",
+		"android.speech.errors.staleDocument": "请重新加载此页面，然后再次尝试语音。",
+		"android.speech.errors.staleSession": "此通知属于旧的语音会话。",
+		"android.speech.errors.stopping": "语音正在停止。请稍候再试。",
+		"android.speech.errors.updateRequired": "语音不可用。请更新 Android 应用后重试。",
+		"android.speech.errors.visibleRequired": "开始语音前请先打开 TwiCC。",
+		"android.speech.notificationTitle": "{name} · 语音",
+		"android.speech.notificationsRequired": "请启用语音通知以使用后台的“跳过”和“全部停止”控件。然后重新开始语音。",
+		"android.speech.openSettings": "打开设置",
+		"android.speech.pauseTimeline": "暂停",
+		"android.speech.preparing": "准备中",
+		"android.speech.reading": "正在朗读",
+		"android.speech.reconnecting": "正在重新连接",
+		"android.speech.recoveryAnnouncement": "连接已恢复。中断期间收到的消息不会被朗读。自动朗读将继续。",
+		"android.speech.resumeTimeline": "继续",
+		"android.speech.settingsTitle": "需要语音设置",
+		"android.speech.skip": "跳过",
+		"android.speech.stopAll": "停止",
+		"android.speech.stopping": "正在停止",
+		"android.speech.timelinePaused": "时间线朗读已暂停",
+		"android.speech.waiting": "等待中",
+		"backend.tts.adaptationStopped": "文本改写在结束前停止了",
+		"backend.tts.apiKeyRequired": "未设置 TWICC_OPENROUTER_API_KEY。请将其添加到 {path} 并重启 TwiCC。",
+		"backend.tts.audioCut": "音频在结束前停止了",
+		"backend.tts.audioExpired": "音频在播放前已过期",
+		"backend.tts.audioGone": "音频已不可用",
+		"backend.tts.authenticationExpired": "认证已过期。请打开 TwiCC 并重新登录。",
+		"backend.tts.catchupIncomplete": "部分消息无法加载。请重新开启时间线朗读。",
+		"backend.tts.chooseMp3": "脚本输出看起来是 MP3：请选择 MP3",
+		"backend.tts.chooseWav": "脚本输出看起来是 WAV：请选择 WAV",
+		"backend.tts.commandMissing": "此脚本配置没有命令",
+		"backend.tts.configMatches": "'config_id' 必须等于 'script_id'",
+		"backend.tts.configNotSaved": "此配置尚未保存：请重试",
+		"backend.tts.configNotValidated": "此脚本配置未经验证：请在设置中重新测试",
+		"backend.tts.configurationUnavailable": "文字转语音不可用。请检查当前启用的配置。",
+		"backend.tts.failed": "文字转语音失败",
+		"backend.tts.fieldString": "'{field}' 必须是字符串",
+		"backend.tts.flacUnsupported": "脚本输出看起来是 FLAC 音频，TwiCC 无法播放",
+		"backend.tts.formatChoices": "'response_format' 必须是以下之一：{choices}",
+		"backend.tts.invalidCommand": "语音无法启动。请重新加载页面后重试。",
+		"backend.tts.modelRequired": "'model' 必须是非空字符串",
+		"backend.tts.mp4Unsupported": "脚本输出看起来是 MP4 音频，TwiCC 无法播放",
+		"backend.tts.noAudio": "脚本没有输出音频",
+		"backend.tts.notMp3": "脚本输出不是 MP3",
+		"backend.tts.notWav": "脚本输出不是 WAV",
+		"backend.tts.nothingToRead": "此文本中没有可朗读的内容",
+		"backend.tts.oggUnsupported": "脚本输出看起来是 Ogg 音频，TwiCC 无法播放",
+		"backend.tts.openrouterStatus": "OpenRouter 返回 HTTP {status}",
+		"backend.tts.openrouterTimeout": "OpenRouter 未能及时响应",
+		"backend.tts.openrouterUnreachable": "无法连接 OpenRouter",
+		"backend.tts.originChoices": "'origin' 必须是以下之一：{choices}",
+		"backend.tts.partFormatChanged": "文本的两个部分之间音频格式发生了变化",
+		"backend.tts.pcmRateRequired": "此脚本配置需要 PCM 采样率",
+		"backend.tts.provider400Hint": "提供方返回 400。请检查模型、声音、格式和文本长度。",
+		"backend.tts.scopeUnavailable": "时间线朗读已停止。请选择另一个时间线。",
+		"backend.tts.scriptAudioLarge": "脚本音频过大",
+		"backend.tts.scriptExit": "脚本失败（退出状态 {status}）",
+		"backend.tts.scriptId": "'script_id' 必须是非空字符串",
+		"backend.tts.scriptMissing": "此脚本配置不存在",
+		"backend.tts.scriptOutputPath": "脚本输出不是单个绝对路径",
+		"backend.tts.scriptPathReused": "脚本两次返回了相同的路径",
+		"backend.tts.scriptSignal": "脚本被信号 {signal} 停止",
+		"backend.tts.scriptStalled": "脚本停止发送音频",
+		"backend.tts.scriptStart": "脚本无法启动",
+		"backend.tts.scriptUnreadable": "无法读取脚本文件",
+		"backend.tts.sessionLost": "语音已停止。请开始播放或重新开启时间线朗读。",
+		"backend.tts.speedNumber": "'speed' 必须是有限的正数",
+		"backend.tts.stopped": "文字转语音已停止",
+		"backend.tts.summaryChanged": "保存的摘要已更改。朗读前请刷新。",
+		"backend.tts.summaryFingerprint": "'summary_result_hash' 必须是已保存结果的指纹",
+		"backend.tts.summaryGone": "摘要已不可用",
+		"backend.tts.summaryHandle": "'summary_id' 必须是非空句柄",
+		"backend.tts.summaryHashRequiresSaved": "'summary_result_hash' 需要 'saved_summary_id'",
+		"backend.tts.summaryReference": "摘要需要且只能有一个引用，不能包含文本或配置测试",
+		"backend.tts.summarySavedGone": "保存的摘要已不可用",
+		"backend.tts.summarySavedId": "'saved_summary_id' 必须是正整数",
+		"backend.tts.summaryStopped": "摘要在结束前停止了",
+		"backend.tts.textRequired": "'text' 必须是非空字符串",
+		"backend.tts.textTooLong": "文本过长，无法发送",
+		"backend.tts.wav16bit": "脚本 WAV 不是 16 位 PCM",
+		"backend.tts.wavFormat": "脚本 WAV 的采样率或声道数不受支持",
+		"common.actions.cancel": "取消",
+		"common.actions.ok": "确定",
+		"common.actions.retry": "重试",
+		"common.actions.save": "保存",
+		"common.android.errors.actionFailed": "无法完成此操作。请重新加载此页面后重试。",
+		"common.android.errors.closed": "与 Android 应用的连接已关闭。请重新加载此页面后重试。",
+		"common.android.errors.invalidNotification": "无效的通知目标。",
+		"common.android.errors.speechPreparing": "语音正在准备中。请稍后再试。",
+		"common.android.errors.tooLarge": "此操作包含的数据过多。请尝试选择更少的内容。",
+		"common.android.errors.unreachable": "无法联系 Android 应用。请重新加载此页面后重试。",
+		"common.labels.unknown": "未知",
+		"common.sessionCount": "{count} 个会话 | {count} 个会话",
+		"composer.status.startingProvider": "正在启动 {provider} 进程...",
+		"navigation.android.active": "活跃",
+		"navigation.android.browser": "在浏览器中打开",
+		"navigation.android.forceRefresh": "重新加载页面（绕过缓存）",
+		"navigation.android.manage": "管理实例",
+		"navigation.android.menu": "Android 应用菜单",
+		"navigation.android.refresh": "刷新",
+		"navigation.android.refreshHint": "重新加载此页面并绕过其资源缓存。你的登录状态和偏好设置会保留。未保存的文本可能会丢失。",
+		"navigation.android.refreshQuestion": "强制刷新？",
+		"navigation.android.reload": "重新加载页面",
+		"navigation.android.serverHome": "服务器主页",
+		"navigation.android.unsupportedState": "不支持的 Android 应用状态。",
+		"peer.toast.unnamedInstance": "一个实例",
+		"session.notifications.activityTimeout": "{provider} 已停止：3 小时无活动",
+		"session.notifications.agentStoppedBeforeAck": "智能体在确认收到你的消息之前就停止了。",
+		"session.notifications.approval": "🖐️ {provider} 需要你的批准",
+		"session.notifications.attention": "{provider} 需要你的关注",
+		"session.notifications.body": "项目：{project}\n会话：{session}",
+		"session.notifications.creditsRemaining": "剩余 {count} 积分。 | 剩余 {count} 积分。",
+		"session.notifications.creditsUsed": "已用 {used} 积分。 | 已用 {used} 积分。",
+		"session.notifications.creditsUsedOf": "已用 {used} / {limit} 积分。 | 已用 {used} / {limit} 积分。",
+		"session.notifications.enabledLabel": "通知已开启",
+		"session.notifications.ephemeral": "临时会话已完成",
+		"session.notifications.ephemeralSession": "临时会话",
+		"session.notifications.errors.update": "更新会话通知失败",
+		"session.notifications.extraUsageSentence": "{provider} 目前正在使用你的额外用量积分，在套餐之外另行计费。",
+		"session.notifications.extraUsageTitle": "{provider}——已开始使用额外用量",
+		"session.notifications.finished": "{provider} 已完成工作",
+		"session.notifications.instance": "一个实例",
+		"session.notifications.invalidTitle": "标题无效",
+		"session.notifications.invalidTitleDetail": "会话标题无效：{error}",
+		"session.notifications.invalidTitleUnknown": "会话标题无效：未知错误",
+		"session.notifications.moneyUsed": "已用 {used} {currency}。",
+		"session.notifications.moneyUsedOf": "已用 {used} / {limit} {currency}。",
+		"session.notifications.mute": "静音",
+		"session.notifications.muteTooltip": "通知已开启——点击以静音“工作完成”通知，并不再将此会话显示为未读",
+		"session.notifications.mutedLabel": "已静音",
+		"session.notifications.notConnected": "未连接",
+		"session.notifications.peerAccepted": "“{peer}”接受了你的对等请求",
+		"session.notifications.peerDelivered": "你发送给“{peer}”的消息{title}已投递",
+		"session.notifications.peerDone": "“{peer}”将你的消息{title}标记为已完成",
+		"session.notifications.peerMessage": "来自 {peer} 的消息",
+		"session.notifications.peerRefused": "你发送给“{peer}”的消息{title}被拒绝",
+		"session.notifications.peerReply": "来自 {peer} 的回复",
+		"session.notifications.peerRequest": "对等请求",
+		"session.notifications.peerRequestFrom": "来自 {peer} 的对等请求",
+		"session.notifications.peerVerification": "“{peer}”接受了你的请求——完成验证码校验即可激活",
+		"session.notifications.providerDisabled": "无法发送到 {provider}：它已被禁用。请在“设置 → 提供方”中启用。",
+		"session.notifications.question": "🖐️ {provider} 有一个问题要问你",
+		"session.notifications.settingsInvalid": "某个设置值无效。",
+		"session.notifications.shells": "{count} 个后台 Shell 仍在运行 | {count} 个后台 Shell 仍在运行",
+		"session.notifications.startTimeout": "{provider} 已停止：1 分钟内未能启动",
+		"session.notifications.terminated": "{provider} 因错误而终止",
+		"session.notifications.turnFinished": "{provider} 完成了本轮",
+		"session.notifications.unknownError": "未知错误",
+		"session.notifications.unmuteTooltip": "已静音——点击以恢复“工作完成”通知和未读标记",
+		"session.notifications.updateAvailable": "TwiCC v{version} 已发布",
+		"session.notifications.viewChanges": "查看变更",
+		"session.speech.errors.cut": "音频在结束前停止了",
+		"session.speech.errors.gone": "音频已不可用",
+		"session.speech.errors.identityRequired": "需要摘要标识",
+		"session.speech.errors.initializing": "原生语音正在初始化。请重试。",
+		"session.speech.errors.nativeUnavailable": "原生语音不可用。请重新打开此页面。",
+		"session.speech.errors.noConfig": "没有启用的文字转语音配置",
+		"session.speech.errors.refused": "浏览器拒绝播放音频",
+		"session.speech.errors.requestFailed": "请求失败（{status}）",
+		"session.speech.errors.startFailed": "语音无法启动。请重新加载页面后重试。",
+		"session.speech.errors.summaryGone": "摘要已不可用",
+		"session.speech.errors.unavailable": "语音不可用。请重新加载页面后重试。",
+		"session.speech.errors.unreachable": "无法连接 TwiCC",
+		"settings.general.language.label": "语言",
+		"settings.notifications.sounds.beep": "嘟",
+		"settings.notifications.sounds.bloop": "咕噜",
+		"settings.notifications.sounds.chime": "钟声",
+		"settings.notifications.sounds.knock": "敲击",
+		"settings.notifications.sounds.ping": "叮",
+		"settings.notifications.sounds.pop": "啵",
+		"settings.notifications.sounds.ripple": "涟漪",
+		"settings.notifications.sounds.signal": "信号",
+		"settings.notifications.sounds.sweep": "扫频",
+		"settings.notifications.sounds.tink": "叮当",
+		"settings.notifications.targets.extraUsage": "额外用量",
+		"workspace.projectCount": "{count} 个项目 | {count} 个项目"
+	};
+})), vg = /* @__PURE__ */ c({ default: () => gg }), yg = o((() => {
+	_g();
+})), bg = /* @__PURE__ */ s(((e, t) => {
+	(function(n, r) {
+		typeof e == "object" && t !== void 0 ? t.exports = r(Ch()) : typeof define == "function" && define.amd ? define(["dayjs"], r) : (n = typeof globalThis < "u" ? globalThis : n || self).dayjs_locale_zh_cn = r(n.dayjs);
+	})(e, (function(e) {
+		function t(e) {
+			return e && typeof e == "object" && "default" in e ? e : { default: e };
+		}
+		var n = t(e), r = {
+			name: "zh-cn",
+			weekdays: "星期日_星期一_星期二_星期三_星期四_星期五_星期六".split("_"),
+			weekdaysShort: "周日_周一_周二_周三_周四_周五_周六".split("_"),
+			weekdaysMin: "日_一_二_三_四_五_六".split("_"),
+			months: "一月_二月_三月_四月_五月_六月_七月_八月_九月_十月_十一月_十二月".split("_"),
+			monthsShort: "1月_2月_3月_4月_5月_6月_7月_8月_9月_10月_11月_12月".split("_"),
+			ordinal: function(e, t) {
+				return t === "W" ? e + "周" : e + "日";
+			},
+			weekStart: 1,
+			yearStart: 4,
+			formats: {
+				LT: "HH:mm",
+				LTS: "HH:mm:ss",
+				L: "YYYY/MM/DD",
+				LL: "YYYY年M月D日",
+				LLL: "YYYY年M月D日Ah点mm分",
+				LLLL: "YYYY年M月D日ddddAh点mm分",
+				l: "YYYY/M/D",
+				ll: "YYYY年M月D日",
+				lll: "YYYY年M月D日 HH:mm",
+				llll: "YYYY年M月D日dddd HH:mm"
+			},
+			relativeTime: {
+				future: "%s内",
+				past: "%s前",
+				s: "几秒",
+				m: "1 分钟",
+				mm: "%d 分钟",
+				h: "1 小时",
+				hh: "%d 小时",
+				d: "1 天",
+				dd: "%d 天",
+				M: "1 个月",
+				MM: "%d 个月",
+				y: "1 年",
+				yy: "%d 年"
+			},
+			meridiem: function(e, t) {
+				var n = 100 * e + t;
+				return n < 600 ? "凌晨" : n < 900 ? "早上" : n < 1100 ? "上午" : n < 1300 ? "中午" : n < 1800 ? "下午" : "晚上";
+			}
+		};
+		return n.default.locale(r, null, !0), r;
+	}));
+})), xg = /* @__PURE__ */ c({ default: () => Cg }), Sg, Cg, wg = o((() => {
+	Lh(), Ih(), Sg = {
+		$code: "zh-cn",
+		$name: "简体中文",
+		$dir: "ltr",
+		carousel: "跑马灯",
+		clearEntry: "清空",
+		close: "关闭",
+		copied: "已复制",
+		copy: "复制",
+		currentValue: "当前值",
+		decrement: "减少",
+		dropFileHere: "Drop file here or click to browse",
+		dropFilesHere: "Drop files here or click to browse",
+		error: "错误",
+		goToSlide: (e, t) => `\u8F6C\u5230\u7B2C ${e} \u5F20\u5E7B\u706F\u7247\uFF0C\u5171 ${t} \u5F20`,
+		hidePassword: "隐藏密码",
+		increment: "增加",
+		loading: "加载中",
+		nextSlide: "下一张幻灯片",
+		numOptionsSelected: (e) => e === 0 ? "未选择任何项目" : e === 1 ? "已选择 1 个项目" : `${e} \u9009\u62E9\u9879\u76EE`,
+		pauseAnimation: "暂停动画",
+		playAnimation: "播放动画",
+		previousSlide: "上一张幻灯片",
+		progress: "进度",
+		remove: "删除",
+		resize: "调整大小",
+		scrollableRegion: "可滚动区域",
+		scrollToEnd: "滚动至页尾",
+		scrollToStart: "滚动至页首",
+		selectAColorFromTheScreen: "从屏幕中选择一种颜色",
+		showPassword: "显示密码",
+		slideNum: (e) => `\u5E7B\u706F\u7247 ${e}`,
+		toggleColorFormat: "切换颜色模式",
+		zoomIn: "放大",
+		zoomOut: "缩小"
+	}, Th(Sg), Cg = Sg;
+})), Tg = Object.freeze([
 	{
 		value: "en",
 		label: "English"
@@ -9390,12 +9753,16 @@ var Dh, Oh, kh, Ah, jh, Mh, Nh = o((() => {
 	{
 		value: "pt-BR",
 		label: "Português (Brasil)"
+	},
+	{
+		value: "zh-CN",
+		label: "简体中文"
 	}
 ]);
-function _g(e) {
-	return gg.some((t) => t.value === e);
+function Eg(e) {
+	return Tg.some((t) => t.value === e);
 }
-var vg = {
+var Dg = {
 	de: async () => {
 		let [e] = await Promise.all([
 			Promise.resolve().then(() => (Sh(), xh)),
@@ -9427,24 +9794,32 @@ var vg = {
 			typeof window > "u" ? null : Promise.resolve().then(() => (hg(), fg))
 		]);
 		return e.default;
+	},
+	"zh-CN": async () => {
+		let [e] = await Promise.all([
+			Promise.resolve().then(() => (yg(), vg)),
+			Promise.resolve().then(() => /* @__PURE__ */ u(bg(), 1)),
+			typeof window > "u" ? null : Promise.resolve().then(() => (wg(), xg))
+		]);
+		return e.default;
 	}
-}, yg = { fr: (e, t) => t === 2 ? Math.abs(e) < 2 ? 0 : 1 : e ? Math.abs(e) === 1 ? 1 : 2 : 0 };
-function bg(e = vg) {
+}, Og = { fr: (e, t) => t === 2 ? Math.abs(e) < 2 ? 0 : 1 : e ? Math.abs(e) === 1 ? 1 : 2 : 0 };
+function kg(e = Dg) {
 	let t = /* @__PURE__ */ new Map([["en", vh]]), n = /* @__PURE__ */ new Map(), r = 0;
 	function i(e = "en") {
 		return ph({
 			legacy: !1,
 			globalInjection: !0,
-			locale: _g(e) ? e : "en",
+			locale: Eg(e) ? e : "en",
 			fallbackLocale: "en",
-			pluralRules: yg,
+			pluralRules: Og,
 			messages: Object.fromEntries([...t].map(([e, t]) => [e, { ...t }]))
 		});
 	}
 	let a = i();
 	async function o(r) {
 		if (!a.global.availableLocales.includes(r)) {
-			if (!_g(r) || !Object.hasOwn(e, r)) throw Error(`No catalog loader for locale: ${r}`);
+			if (!Eg(r) || !Object.hasOwn(e, r)) throw Error(`No catalog loader for locale: ${r}`);
 			if (!n.has(r)) {
 				let i = Promise.resolve().then(() => e[r]()).then((e) => {
 					t.set(r, e), a.global.setLocaleMessage(r, { ...e });
@@ -9458,7 +9833,7 @@ function bg(e = vg) {
 		a.global.locale.value = e, t && (t.documentElement.lang = e, t.documentElement.style?.setProperty("--twicc-loading-label", JSON.stringify(a.global.t("common.status.loading"))));
 	}
 	async function c(e, t = globalThis.document) {
-		let n = ++r, i = _g(e) ? e : "en";
+		let n = ++r, i = Eg(e) ? e : "en";
 		if (!a.global.availableLocales.includes(i)) try {
 			await o(i);
 		} catch (e) {
@@ -9474,14 +9849,15 @@ function bg(e = vg) {
 		setLocale: c
 	};
 }
-var { createAppI18n: xg, i18n: Sg, loadLocaleMessages: Cg, setLocale: wg } = bg(), Tg = {
+var { createAppI18n: Ag, i18n: jg, loadLocaleMessages: Mg, setLocale: Ng } = kg(), Pg = {
 	format: 1,
 	locales: [
 		"en",
 		"de",
 		"es",
 		"fr",
-		"pt-BR"
+		"pt-BR",
+		"zh-CN"
 	],
 	messages: /* @__PURE__ */ JSON.parse("{\"android.instances.subtitle\":{},\"android.instances.saved\":{},\"android.instances.lastUsed\":{},\"android.instances.emptyTitle\":{},\"android.instances.emptyBody\":{},\"android.instances.add\":{},\"android.instances.editTitle\":{},\"android.instances.nameLabel\":{},\"android.instances.addressLabel\":{},\"android.instances.addressHint\":{},\"android.instances.remove\":{},\"android.instances.removeTitle\":{},\"android.instances.removeMessage\":{},\"android.instances.openDescription\":{},\"android.instances.editDescription\":{},\"android.instances.removeDescription\":{},\"android.instances.errors.duplicate\":{},\"android.instances.errors.invalidAddress\":{},\"android.instances.errors.httpsRequired\":{},\"android.instances.errors.originRequired\":{},\"android.instances.errors.rootRequired\":{},\"android.instances.errors.invalidPort\":{},\"android.browser.menuDescription\":{},\"android.browser.version\":{},\"android.browser.errors.engineStart\":{},\"android.browser.errors.rendererStopped\":{},\"android.browser.errors.instanceRemoved\":{},\"android.browser.errors.sessionClosed\":{},\"android.browser.errors.unreachable\":{},\"android.browser.errors.certificate\":{},\"android.browser.errors.httpStatus\":{},\"android.browser.errors.pageBlocked\":{},\"android.browser.errors.webviewProfiles\":{},\"android.browser.errors.linkUnsupported\":{},\"android.browser.errors.browserUnavailable\":{},\"android.browser.errors.applicationUnavailable\":{},\"android.files.errors.pickerUnavailable\":{},\"android.files.errors.folderUnsupported\":{},\"android.files.errors.readFailed\":{},\"android.downloads.browserRequired\":{},\"android.downloads.started\":{},\"android.downloads.saving\":{},\"android.downloads.saved\":{},\"android.downloads.errors.startFailed\":{},\"android.downloads.errors.saveUnavailable\":{},\"android.downloads.errors.failed\":{},\"android.speech.channel\":{},\"android.speech.notificationTitle\":{},\"android.speech.preparing\":{},\"android.speech.reading\":{},\"android.speech.waiting\":{},\"android.speech.reconnecting\":{},\"android.speech.recoveryAnnouncement\":{},\"android.speech.stopping\":{},\"android.speech.skip\":{},\"android.speech.stopAll\":{},\"android.speech.pauseTimeline\":{},\"android.speech.resumeTimeline\":{},\"android.speech.timelinePaused\":{},\"android.speech.notificationsRequired\":{},\"android.speech.batteryTitle\":{},\"android.speech.batteryAdvice\":{},\"android.speech.continueWithoutChanges\":{},\"android.speech.settingsTitle\":{},\"android.speech.openSettings\":{},\"common.actions.ok\":{},\"android.speech.errors.cookieSupport\":{},\"android.instances.title\":{},\"android.speech.errors.updateRequired\":{},\"android.speech.errors.staleDocument\":{},\"android.speech.errors.playbackChanged\":{},\"android.speech.errors.changeFailed\":{},\"android.speech.errors.instanceRequired\":{},\"android.speech.errors.credentialsUnavailable\":{},\"android.speech.errors.stopping\":{},\"android.speech.errors.staleSession\":{},\"android.speech.errors.instanceChanged\":{},\"android.speech.errors.androidStopped\":{},\"android.speech.errors.instanceClosed\":{},\"android.speech.errors.visibleRequired\":{},\"android.speech.errors.batteryChoiceRequired\":{},\"android.speech.errors.generationFailed\":{},\"android.speech.errors.interrupted\":{},\"android.speech.errors.playbackFailed\":{},\"android.speech.errors.retryPlayback\":{},\"android.speech.errors.failed\":{},\"android.speech.errors.audioRequest\":{},\"android.speech.errors.audioEmpty\":{},\"android.speech.errors.audioFormat\":{},\"android.push.soundTitle\":{},\"settings.notifications.sounds.beep\":{},\"settings.notifications.sounds.chime\":{},\"settings.notifications.sounds.ping\":{},\"settings.notifications.sounds.pop\":{},\"settings.notifications.sounds.bloop\":{},\"settings.notifications.sounds.tink\":{},\"settings.notifications.sounds.knock\":{},\"settings.notifications.sounds.sweep\":{},\"settings.notifications.sounds.signal\":{},\"settings.notifications.sounds.ripple\":{},\"android.push.channels.finished\":{},\"android.push.channels.attention\":{},\"android.push.channels.peer\":{},\"android.push.distributorLabel\":{},\"android.push.titleWithInstance\":{},\"android.push.genericTitle\":{},\"android.push.genericBody\":{},\"android.push.errors.updateApp\":{},\"android.push.errors.updateServer\":{},\"android.push.finishedWithShells\":{},\"android.push.extraUsageBody\":{},\"android.push.peerBody\":{},\"android.push.peerBodyWithProject\":{},\"android.push.peerBodyWithSession\":{},\"android.push.peerRequestBody\":{},\"android.language.errors.unsupported\":{},\"android.language.errors.changed\":{},\"android.language.errors.invalidRevision\":{},\"android.language.errors.revisionExhausted\":{},\"android.language.errors.saveFailed\":{},\"android.language.errors.staleDocument\":{},\"android.language.errors.updateApp\":{},\"android.language.errors.updateServer\":{},\"common.actions.save\":{},\"common.actions.cancel\":{},\"common.actions.retry\":{},\"composer.status.startingProvider\":{},\"common.sessionCount\":{\"numberFormats\":{\"count\":\"decimal\"}},\"workspace.projectCount\":{\"numberFormats\":{\"count\":\"decimal\"}},\"common.android.errors.actionFailed\":{},\"common.android.errors.closed\":{},\"common.android.errors.invalidNotification\":{},\"common.android.errors.speechPreparing\":{},\"common.android.errors.tooLarge\":{},\"common.android.errors.unreachable\":{},\"navigation.android.active\":{},\"navigation.android.browser\":{},\"navigation.android.forceRefresh\":{},\"navigation.android.manage\":{},\"navigation.android.menu\":{},\"navigation.android.refresh\":{},\"navigation.android.refreshHint\":{},\"navigation.android.refreshQuestion\":{},\"navigation.android.reload\":{},\"navigation.android.serverHome\":{},\"navigation.android.unsupportedState\":{},\"session.notifications.activityTimeout\":{},\"session.notifications.agentStoppedBeforeAck\":{},\"session.notifications.approval\":{},\"session.notifications.attention\":{},\"session.notifications.body\":{},\"session.notifications.creditsRemaining\":{\"numberFormats\":{\"count\":\"decimal\"}},\"session.notifications.creditsUsed\":{\"numberFormats\":{\"used\":\"decimal\"}},\"session.notifications.creditsUsedOf\":{\"numberFormats\":{\"used\":\"decimal\",\"limit\":\"decimal\"}},\"session.notifications.enabledLabel\":{},\"session.notifications.ephemeral\":{},\"session.notifications.ephemeralSession\":{},\"session.notifications.errors.update\":{},\"session.notifications.extraUsageSentence\":{},\"session.notifications.extraUsageTitle\":{},\"session.notifications.finished\":{},\"session.notifications.instance\":{},\"session.notifications.invalidTitle\":{},\"session.notifications.invalidTitleDetail\":{},\"session.notifications.invalidTitleUnknown\":{},\"session.notifications.moneyUsed\":{\"numberFormats\":{\"used\":\"decimal\"}},\"session.notifications.moneyUsedOf\":{\"numberFormats\":{\"used\":\"decimal\",\"limit\":\"decimal\"}},\"session.notifications.mute\":{},\"session.notifications.mutedLabel\":{},\"session.notifications.muteTooltip\":{},\"session.notifications.notConnected\":{},\"session.notifications.peerAccepted\":{},\"session.notifications.peerDelivered\":{},\"session.notifications.peerDone\":{},\"session.notifications.peerMessage\":{},\"session.notifications.peerRefused\":{},\"session.notifications.peerReply\":{},\"session.notifications.peerRequest\":{},\"session.notifications.peerRequestFrom\":{},\"session.notifications.peerVerification\":{},\"session.notifications.providerDisabled\":{},\"session.notifications.question\":{},\"session.notifications.settingsInvalid\":{},\"session.notifications.shells\":{\"numberFormats\":{\"count\":\"decimal\"}},\"session.notifications.startTimeout\":{},\"session.notifications.terminated\":{},\"session.notifications.turnFinished\":{},\"session.notifications.unknownError\":{},\"session.notifications.unmuteTooltip\":{},\"session.notifications.updateAvailable\":{},\"session.notifications.viewChanges\":{},\"session.speech.errors.cut\":{},\"session.speech.errors.gone\":{},\"session.speech.errors.identityRequired\":{},\"session.speech.errors.initializing\":{},\"session.speech.errors.nativeUnavailable\":{},\"session.speech.errors.noConfig\":{},\"session.speech.errors.refused\":{},\"session.speech.errors.requestFailed\":{},\"session.speech.errors.startFailed\":{},\"session.speech.errors.summaryGone\":{},\"session.speech.errors.unavailable\":{},\"session.speech.errors.unreachable\":{},\"backend.tts.audioGone\":{},\"backend.tts.audioCut\":{},\"backend.tts.textTooLong\":{},\"backend.tts.speedNumber\":{},\"backend.tts.textRequired\":{},\"backend.tts.modelRequired\":{},\"backend.tts.summaryReference\":{},\"backend.tts.summarySavedId\":{},\"backend.tts.summaryFingerprint\":{},\"backend.tts.summaryHashRequiresSaved\":{},\"backend.tts.summaryHandle\":{},\"backend.tts.scriptId\":{},\"backend.tts.configMatches\":{},\"backend.tts.summarySavedGone\":{},\"backend.tts.summaryChanged\":{},\"backend.tts.summaryGone\":{},\"backend.tts.failed\":{},\"backend.tts.nothingToRead\":{},\"backend.tts.configNotSaved\":{},\"backend.tts.configNotValidated\":{},\"backend.tts.scriptMissing\":{},\"backend.tts.pcmRateRequired\":{},\"backend.tts.commandMissing\":{},\"backend.tts.openrouterTimeout\":{},\"backend.tts.openrouterUnreachable\":{},\"backend.tts.summaryStopped\":{},\"backend.tts.stopped\":{},\"backend.tts.partFormatChanged\":{},\"backend.tts.fieldString\":{},\"backend.tts.originChoices\":{},\"backend.tts.formatChoices\":{},\"backend.tts.apiKeyRequired\":{},\"backend.tts.scriptStart\":{},\"backend.tts.scriptStalled\":{},\"backend.tts.scriptAudioLarge\":{},\"backend.tts.scriptOutputPath\":{},\"backend.tts.scriptPathReused\":{},\"backend.tts.scriptUnreadable\":{},\"backend.tts.scriptExit\":{},\"backend.tts.scriptSignal\":{},\"backend.tts.audioExpired\":{},\"backend.tts.authenticationExpired\":{},\"backend.tts.sessionLost\":{},\"backend.tts.invalidCommand\":{},\"backend.tts.scopeUnavailable\":{},\"backend.tts.catchupIncomplete\":{},\"backend.tts.configurationUnavailable\":{},\"backend.tts.notMp3\":{},\"backend.tts.notWav\":{},\"backend.tts.wav16bit\":{},\"backend.tts.wavFormat\":{},\"backend.tts.noAudio\":{},\"backend.tts.chooseMp3\":{},\"backend.tts.chooseWav\":{},\"backend.tts.oggUnsupported\":{},\"backend.tts.flacUnsupported\":{},\"backend.tts.mp4Unsupported\":{},\"backend.tts.openrouterStatus\":{},\"backend.tts.provider400Hint\":{},\"backend.tts.adaptationStopped\":{},\"settings.notifications.targets.extraUsage\":{},\"settings.general.language.label\":{},\"peer.toast.unnamedInstance\":{},\"common.labels.unknown\":{},\"android.push.projectWithParent\":{}}"),
 	bootstrapResources: {
@@ -9776,8 +10152,8 @@ var { createAppI18n: xg, i18n: Sg, loadLocaleMessages: Cg, setLocale: wg } = bg(
 			reason: "Worker thread name; never displayed in the interface"
 		}]
 	}
-}, Eg = /* @__PURE__ */ new Map(), Dg = /^-?(?:0|[1-9]\d*)(?:\.(\d+))?$/;
-function Og(e, t) {
+}, Fg = /* @__PURE__ */ new Map(), Ig = /^-?(?:0|[1-9]\d*)(?:\.(\d+))?$/;
+function Lg(e, t) {
 	if (typeof e == "number") {
 		if (!Number.isFinite(e)) return e;
 		let t = Object.is(e, -0) ? "-0" : String(e);
@@ -9787,16 +10163,16 @@ function Og(e, t) {
 			e = i + (o <= 0 ? `0.${"0".repeat(-o)}${s}` : o >= s.length ? s + "0".repeat(o - s.length) : `${s.slice(0, o)}.${s.slice(o)}`);
 		}
 	}
-	if (typeof e != "string" || !Dg.test(e)) return e;
+	if (typeof e != "string" || !Ig.test(e)) return e;
 	let [n, r] = e.split("."), i = n === "-0", a = new Intl.NumberFormat(t), o = a.format(i ? -0 : BigInt(n));
 	return r === void 0 ? o : `${o}${a.formatToParts(1.1).find((e) => e.type === "decimal").value}${r}`;
 }
-function kg(e, t, n) {
-	let r = Tg.messages[e]?.numberFormats ?? {};
-	return Object.fromEntries(Object.entries(t).map(([e, t]) => [e, r[e] === "decimal" ? Og(t, n) : t]));
+function Rg(e, t, n) {
+	let r = Pg.messages[e]?.numberFormats ?? {};
+	return Object.fromEntries(Object.entries(t).map(([e, t]) => [e, r[e] === "decimal" ? Lg(t, n) : t]));
 }
-function Ag(e) {
-	if (!Eg.has(e)) {
+function zg(e) {
+	if (!Fg.has(e)) {
 		let { ast: t } = Ue(e, {
 			jit: !0,
 			optimize: !1,
@@ -9804,11 +10180,11 @@ function Ag(e) {
 				throw e;
 			}
 		}), n = t.body.type === 1 ? t.body.cases : [t.body];
-		Eg.set(e, n.map((e) => e.items.filter((e) => e.type === 4).map((e) => e.key)));
+		Fg.set(e, n.map((e) => e.items.filter((e) => e.type === 4).map((e) => e.key)));
 	}
-	return Eg.get(e);
+	return Fg.get(e);
 }
-function jg(e, t = Sg.global) {
+function Bg(e, t = jg.global) {
 	let n = 0;
 	function r(e, i) {
 		if (i > 4 || ++n > 64 || !e || typeof e != "object" || Array.isArray(e) || typeof e.key != "string" || !t.te(e.key, "en") || e.count !== void 0 && (typeof e.count != "number" || !Number.isFinite(e.count))) throw Error();
@@ -9824,11 +10200,11 @@ function jg(e, t = Sg.global) {
 			return [e, t];
 		})), s = t.te(e.key, t.locale.value) ? t.locale.value : "en", c = t.getLocaleMessage(s)[e.key];
 		if (typeof c != "string") throw Error();
-		let l = Ag(c), u = Math.abs(typeof a.count == "number" ? a.count : typeof a.n == "number" ? a.n : e.count ?? -1), d = l.length === 1 ? 0 : l.length === 2 ? s === "fr" ? u < 2 ? 0 : 1 : u === 1 ? 0 : 1 : s === "fr" ? u === 0 ? 0 : u === 1 ? 1 : 2 : Math.min(u, 2);
+		let l = zg(c), u = Math.abs(typeof a.count == "number" ? a.count : typeof a.n == "number" ? a.n : e.count ?? -1), d = l.length === 1 ? 0 : l.length === 2 ? s === "fr" ? u < 2 ? 0 : 1 : u === 1 ? 0 : 1 : s === "fr" ? u === 0 ? 0 : u === 1 ? 1 : 2 : Math.min(u, 2);
 		if (!l[d]) throw Error();
 		for (let t of l[d]) {
 			let n = o[t] ?? (["count", "n"].includes(t) ? e.count : void 0);
-			if (n == null || Tg.messages[e.key]?.numberFormats?.[t] === "decimal" && !(typeof n == "number" || typeof n == "string" && Dg.test(n))) throw Error();
+			if (n == null || Pg.messages[e.key]?.numberFormats?.[t] === "decimal" && !(typeof n == "number" || typeof n == "string" && Ig.test(n))) throw Error();
 		}
 		return {
 			type: "local-ui-message",
@@ -9845,18 +10221,18 @@ function jg(e, t = Sg.global) {
 }
 //#endregion
 //#region src/i18n/uiMessageRenderer.js
-function Mg(e, t) {
-	if (e?.type === "local-ui-message-list") return e.messages.map((e) => Mg(e, t)).join(" — ");
+function Vg(e, t) {
+	if (e?.type === "local-ui-message-list") return e.messages.map((e) => Vg(e, t)).join(" — ");
 	if (e?.type !== "local-ui-message") return e;
-	let n = Object.fromEntries(Object.entries(e.params || {}).map(([e, n]) => [e, n?.type === "local-ui-message" || n?.type === "local-ui-message-list" ? Mg(n, t) : n])), r = typeof n.count == "number" ? n.count : typeof n.n == "number" ? n.n : e.count;
-	for (let t of ["count", "n"]) n[t] == null && e.count !== void 0 && Tg.messages[e.key]?.numberFormats?.[t] && (n[t] = e.count);
-	let i = kg(e.key, n, t.locale.value);
+	let n = Object.fromEntries(Object.entries(e.params || {}).map(([e, n]) => [e, n?.type === "local-ui-message" || n?.type === "local-ui-message-list" ? Vg(n, t) : n])), r = typeof n.count == "number" ? n.count : typeof n.n == "number" ? n.n : e.count;
+	for (let t of ["count", "n"]) n[t] == null && e.count !== void 0 && Pg.messages[e.key]?.numberFormats?.[t] && (n[t] = e.count);
+	let i = Rg(e.key, n, t.locale.value);
 	for (let e of ["count", "n"]) typeof i[e] == "number" && (i[e] = String(i[e]));
 	return t.t(e.key, i, r === void 0 ? {} : r);
 }
 //#endregion
 //#region src/i18n/uiMessages.js
-function Ng(e, t = {}, n) {
+function Hg(e, t = {}, n) {
 	return {
 		type: "local-ui-message",
 		key: e,
@@ -9864,37 +10240,37 @@ function Ng(e, t = {}, n) {
 		...n === void 0 ? {} : { count: n }
 	};
 }
-function Pg(e) {
-	return Mg(e, Sg.global);
+function Ug(e) {
+	return Vg(e, jg.global);
 }
-function Fg(e, t = {}, n) {
-	let r = Ng(e, t, n), i = Error(Pg(r));
+function Wg(e, t = {}, n) {
+	let r = Hg(e, t, n), i = Error(Ug(r));
 	return Object.defineProperty(i, "message", {
 		configurable: !0,
-		get: () => Pg(r)
+		get: () => Ug(r)
 	}), i.uiMessage = r, i;
 }
 //#endregion
 //#region src/i18n/remoteMessages.js
-function Ig(e, t = e?.error ?? e?.message ?? "", n = "ui_message") {
-	return jg(e?.[n] ?? (n === "ui_message" ? e?.error_ui_message : void 0)) ?? t;
+function Gg(e, t = e?.error ?? e?.message ?? "", n = "ui_message") {
+	return Bg(e?.[n] ?? (n === "ui_message" ? e?.error_ui_message : void 0)) ?? t;
 }
-function Lg(e, t = e?.error ?? e?.message ?? "") {
-	let n = Ig(e, e?.error ?? e?.message ?? t), r = n?.type === "local-ui-message" ? Fg(n.key, n.params, n.count) : Error(n);
+function Kg(e, t = e?.error ?? e?.message ?? "") {
+	let n = Gg(e, e?.error ?? e?.message ?? t), r = n?.type === "local-ui-message" ? Wg(n.key, n.params, n.count) : Error(n);
 	return e?.code !== void 0 && (r.code = e.code), e?.status !== void 0 && (r.status = e.status), r;
 }
 //#endregion
 //#region src/utils/androidEnvironment.js
-var Rg = /* @__PURE__ */ ga(!1);
-function zg() {
-	Rg.value || (Rg.value = !0, globalThis.window?.dispatchEvent(new Event("twicc:android-ready")));
+var qg = /* @__PURE__ */ ga(!1);
+function Jg() {
+	qg.value || (qg.value = !0, globalThis.window?.dispatchEvent(new Event("twicc:android-ready")));
 }
-function Bg(e) {
+function Yg(e) {
 	typeof e?.engine == "string" && (/^Gecko/i.test(e.engine) || /WebView/i.test(e.engine)) && typeof e.version == "string" && e.version;
 }
 //#endregion
 //#region src/utils/androidAppClient.js
-var Vg = "twicc.android.response", Hg = "twicc.android.request", Ug = /* @__PURE__ */ new Set([
+var Xg = "twicc.android.response", Zg = "twicc.android.request", Qg = /* @__PURE__ */ new Set([
 	"tts.attach",
 	"tts.state",
 	"tts.acknowledge",
@@ -9904,10 +10280,10 @@ var Vg = "twicc.android.response", Hg = "twicc.android.request", Ug = /* @__PURE
 	"tts.disable",
 	"tts.skip",
 	"tts.stop_all"
-]), Wg = /* @__PURE__ */ new Set([...Ug, "locale.set"]);
-function Gg(e, { timeoutMs: t = 1500 } = {}) {
+]), $g = /* @__PURE__ */ new Set([...Qg, "locale.set"]);
+function e_(e, { timeoutMs: t = 1500 } = {}) {
 	let n = /* @__PURE__ */ new Map(), r = /* @__PURE__ */ new Set(), i = Math.random().toString(36).slice(2), a = 0, o = !1, s = null, c = {}, l = typeof e.TwiccAndroid?.postMessage == "function" ? e.TwiccAndroid : null;
-	l && zg();
+	l && Jg();
 	function u(e) {
 		if (o) return;
 		if (e?.protocol === 1 && e.event === "stateChanged") {
@@ -9917,15 +10293,15 @@ function Gg(e, { timeoutMs: t = 1500 } = {}) {
 		if (!e || e.protocol !== 1 || typeof e.id != "string") return;
 		let t = n.get(e.id);
 		if (t && typeof e.ok == "boolean") {
-			if (zg(), n.delete(e.id), clearTimeout(t.timer), e.ok) t.command === "getState" && (c = e.state?.capabilities ?? {}, Bg(e.state)), t.resolve(e.state ?? null);
+			if (Jg(), n.delete(e.id), clearTimeout(t.timer), e.ok) t.command === "getState" && (c = e.state?.capabilities ?? {}, Yg(e.state)), t.resolve(e.state ?? null);
 			else {
-				let n = e.ui_message || typeof e.error == "string" ? Lg(e, Fg("common.android.errors.actionFailed").message) : Fg("common.android.errors.actionFailed");
+				let n = e.ui_message || typeof e.error == "string" ? Kg(e, Wg("common.android.errors.actionFailed").message) : Wg("common.android.errors.actionFailed");
 				e.state !== void 0 && (n.state = e.state), t.reject(n);
 			}
 		}
 	}
 	function d(t) {
-		t.source === e && t.origin === e.location.origin && (t.data?.channel === Vg && u(t.data.response), t.data?.channel === "twicc.android.environment" && t.data.protocol === 1 && typeof t.data.id == "string" && n.get(t.data.id)?.command === "getState" && zg());
+		t.source === e && t.origin === e.location.origin && (t.data?.channel === Xg && u(t.data.response), t.data?.channel === "twicc.android.environment" && t.data.protocol === 1 && typeof t.data.id == "string" && n.get(t.data.id)?.command === "getState" && Jg());
 	}
 	function f(e) {
 		try {
@@ -9940,8 +10316,8 @@ function Gg(e, { timeoutMs: t = 1500 } = {}) {
 			return o || r.add(e), () => r.delete(e);
 		},
 		async request(r, c = {}) {
-			if (o) return Promise.reject(Fg("common.android.errors.closed"));
-			if (l && Wg.has(r)) {
+			if (o) return Promise.reject(Wg("common.android.errors.closed"));
+			if (l && $g.has(r)) {
 				let n = Date.now() + t;
 				for (; !s && !o;) {
 					let t = e.__twiccNativeTtsDocument;
@@ -9949,28 +10325,28 @@ function Gg(e, { timeoutMs: t = 1500 } = {}) {
 						s = t;
 						break;
 					}
-					if (Date.now() >= n) throw Fg(r === "locale.set" ? "android.language.errors.staleDocument" : "common.android.errors.speechPreparing");
+					if (Date.now() >= n) throw Wg(r === "locale.set" ? "android.language.errors.staleDocument" : "common.android.errors.speechPreparing");
 					await new Promise((e) => setTimeout(e, 10));
 				}
-				if (o) throw Fg("common.android.errors.closed");
+				if (o) throw Wg("common.android.errors.closed");
 			}
 			let u = `${i}-${++a}`, d = {
 				...c,
-				...s && Wg.has(r) ? { documentToken: s } : {},
+				...s && $g.has(r) ? { documentToken: s } : {},
 				protocol: 1,
 				id: u,
 				command: r
 			}, f;
 			try {
 				f = JSON.stringify(d);
-				let e = Ug.has(r) ? 12582912 : 16384;
-				if (new TextEncoder().encode(f).byteLength > e) return Promise.reject(Fg("common.android.errors.tooLarge"));
+				let e = Qg.has(r) ? 12582912 : 16384;
+				if (new TextEncoder().encode(f).byteLength > e) return Promise.reject(Wg("common.android.errors.tooLarge"));
 			} catch (e) {
-				return console.warn("Android request serialization failed", e), Promise.reject(Fg("common.android.errors.actionFailed"));
+				return console.warn("Android request serialization failed", e), Promise.reject(Wg("common.android.errors.actionFailed"));
 			}
 			return new Promise((i, a) => {
 				let o = setTimeout(() => {
-					n.delete(u), a(Fg("common.android.errors.unreachable"));
+					n.delete(u), a(Wg("common.android.errors.unreachable"));
 				}, t);
 				n.set(u, {
 					resolve: i,
@@ -9980,24 +10356,24 @@ function Gg(e, { timeoutMs: t = 1500 } = {}) {
 				});
 				try {
 					l ? l.postMessage(f) : e.postMessage({
-						channel: Hg,
+						channel: Zg,
 						request: d
 					}, e.location.origin);
 				} catch (e) {
-					clearTimeout(o), n.delete(u), console.warn("Android request transport failed", e), a(Fg("common.android.errors.unreachable"));
+					clearTimeout(o), n.delete(u), console.warn("Android request transport failed", e), a(Wg("common.android.errors.unreachable"));
 				}
 			});
 		},
 		close() {
 			o = !0, c = {}, r.clear(), e.removeEventListener("message", d), l?.onmessage === f && (l.onmessage = null);
-			for (let e of n.values()) clearTimeout(e.timer), e.reject(Fg("common.android.errors.closed"));
+			for (let e of n.values()) clearTimeout(e.timer), e.reject(Wg("common.android.errors.closed"));
 			n.clear();
 		}
 	};
 }
-var Kg;
-function qg() {
-	return Kg ?? (Kg = Gg(window));
+var t_;
+function n_() {
+	return t_ ?? (t_ = e_(window));
 }
 //#endregion
-export { Gg as createAndroidAppClient, qg as getAndroidAppClient };
+export { e_ as createAndroidAppClient, n_ as getAndroidAppClient };

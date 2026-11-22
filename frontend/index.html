@@ -10,7 +10,14 @@
         let locale = 'en';
         try {
             const saved = JSON.parse(window.localStorage.getItem('twicc-settings') || '{}')?.locale;
-            if (saved === 'pt-BR' || saved === 'fr' || saved === 'es' || saved === 'de') locale = saved;
+            if (saved === 'pt-BR' || saved === 'fr' || saved === 'es' || saved === 'de' || saved === 'zh-CN') locale = saved;
+            // Same browser-language fallback as detectBrowserLocale() in src/i18n/index.js.
+            else if (!saved) for (const tag of navigator.languages || [navigator.language]) {
+                const [language, ...subtags] = String(tag || '').replace(/_/g, '-').toLowerCase().split('-');
+                if (language === 'zh' && !subtags.some(subtag => ['hant', 'tw', 'hk', 'mo'].includes(subtag))) { locale = 'zh-CN'; break; }
+                if (language === 'pt') { locale = 'pt-BR'; break; }
+                if (language === 'en' || language === 'de' || language === 'es' || language === 'fr') { locale = language; break; }
+            }
         } catch {}
         document.documentElement.lang = locale;
         const key = 'twicc:asset-recovery';

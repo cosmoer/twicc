@@ -249,8 +249,10 @@ TwiCC runs on **Linux** and **macOS**. There is no native Windows support — th
 ## Interface languages
 
 Choose **Settings → General → Language** for English, **Deutsch**, **Español**,
-**Français** or **Português (Brasil)**. The preference is saved in your browser
-and applies immediately. See [Internationalization](docs/internationalization.md)
+**Français**, **Português (Brasil)** or **简体中文** (Simplified Chinese; in the
+Chinese interface: **设置 → 常规 → 语言**). The preference is saved in your browser
+and applies immediately. On a first visit, TwiCC follows the browser's preferred
+language when it is supported. See [Internationalization](docs/internationalization.md)
 for what is translated and how to contribute another language.
 
 ## Anonymous telemetry

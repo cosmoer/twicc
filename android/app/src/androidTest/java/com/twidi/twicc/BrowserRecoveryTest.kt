@@ -197,7 +197,7 @@ class BrowserRecoveryTest {
                 originalPanel = field(activity, "errorPanel") as android.view.ViewGroup
             }
             try {
-                for (locale in listOf("en", "de", "es", "fr", "pt-BR")) {
+                for (locale in listOf("en", "de", "es", "fr", "pt-BR", "zh-CN")) {
                     assertTrue(language.select(locale, language.read().revision).accepted)
                     instrumentation.waitForIdleSync()
                     scenario.onActivity { activity ->
@@ -224,7 +224,7 @@ class BrowserRecoveryTest {
                 popup = field(activity, "nativeMenu") as PopupMenu
             }
             try {
-                for (locale in listOf("en", "de", "es", "fr", "pt-BR")) {
+                for (locale in listOf("en", "de", "es", "fr", "pt-BR", "zh-CN")) {
                     language.select(locale, language.read().revision)
                     instrumentation.waitForIdleSync()
                     scenario.onActivity { activity ->
@@ -256,7 +256,7 @@ class BrowserRecoveryTest {
                 dialog = field(activity, "refreshConfirmation") as android.app.AlertDialog
             }
             try {
-                for (locale in listOf("en", "de", "es", "fr", "pt-BR")) {
+                for (locale in listOf("en", "de", "es", "fr", "pt-BR", "zh-CN")) {
                     language.select(locale, language.read().revision)
                     instrumentation.waitForIdleSync()
                     scenario.onActivity { activity ->
@@ -291,7 +291,7 @@ class BrowserRecoveryTest {
                 dialog = field(activity, "speechSettingsDialog") as android.app.AlertDialog
             }
             try {
-                for (locale in listOf("en", "de", "es", "fr", "pt-BR")) {
+                for (locale in listOf("en", "de", "es", "fr", "pt-BR", "zh-CN")) {
                     assertTrue(language.select(locale, language.read().revision).accepted)
                     instrumentation.waitForIdleSync()
                     scenario.onActivity { activity ->

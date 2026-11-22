@@ -3,13 +3,18 @@
 ## Interface languages
 
 Choose **Settings → General → Language** to switch between **English**,
-**Deutsch**, **Español**, **Français** and **Português (Brasil)**. The change is
-immediate.
+**Deutsch**, **Español**, **Français**, **Português (Brasil)** and **简体中文**.
+The change is immediate.
 
 - The preference is saved in the browser's existing `twicc-settings` localStorage entry.
 - It is restored before the login screen is mounted.
 - It is local to the browser, like the color scheme. It does not change the language on other devices.
-- English is the default, also when stored settings are invalid or unavailable.
+- Without a stored choice, the first visit follows the browser's preferred
+  languages (`navigator.languages`): the first one TwiCC supports wins. `zh`,
+  `zh-CN`, `zh-SG` and `zh-Hans` select `zh-CN`; Traditional Chinese (`zh-TW`,
+  `zh-HK`, `zh-MO`, `zh-Hant`) is not mapped. `pt` selects `pt-BR`.
+- English is the default when no preferred language is supported, and also when
+  stored settings are invalid.
 
 These persistence rules describe ordinary browsers. Android uses the
 [installation language](#android-installation-language) instead of browser
@@ -28,6 +33,7 @@ responses, project names, saved snippets, terminal output or file contents.
 | Español | `es` | informal `tú`, neutral international Spanish | default (zero is plural) | `es.js` | `es` |
 | Français | `fr` | `vous` | custom: zero and one are singular | `fr.js` | `fr` |
 | Português (Brasil) | `pt-BR` | `você` | default | `pt.js` (not `pt-BR.js`) | `pt-br` |
+| 简体中文 | `zh-CN` | `你` | default (every form carries the same text) | `zh-cn.js` | `zh-cn` |
 
 The French rule is `pluralRules` in `frontend/src/i18n/index.js`. For
 three-form messages it keeps the default zero/one/other selection.
@@ -264,8 +270,8 @@ metadata there. See [Backend interface messages](#backend-interface-messages).
 
 ### Android installation language
 
-Android owns one persisted installation language: `en`, `de`, `es`, `fr`, or
-`pt-BR`. It starts in English and does not read Android's system language.
+Android owns one persisted installation language: `en`, `de`, `es`, `fr`,
+`pt-BR`, or `zh-CN`. It starts in English and does not read Android's system language.
 Compatible embedded pages synchronize through the revisioned native language
 bridge. Browser storage restoration is not an explicit native selection.
 Each device and ordinary browser keeps an independent preference.

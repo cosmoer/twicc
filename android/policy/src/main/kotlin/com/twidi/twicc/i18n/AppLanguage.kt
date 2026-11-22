@@ -21,7 +21,7 @@ data class AppLanguage(val locale: String, val revision: Long) {
     }
 
     companion object {
-        val SUPPORTED_LOCALES: List<String> = listOf("en", "de", "es", "fr", "pt-BR")
+        val SUPPORTED_LOCALES: List<String> = listOf("en", "de", "es", "fr", "pt-BR", "zh-CN")
         const val MAX_REVISION: Long = 9_007_199_254_740_991L
         val INITIAL = AppLanguage("en", 0)
 

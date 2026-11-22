@@ -49,7 +49,7 @@ test('matches every real generated Vue oracle case through the shared web resolv
     const { readFile } = await import('node:fs/promises')
     const { toLocalMessageDescriptor } = await import('./messageDescriptors.js')
     const fixture = JSON.parse(await readFile(new URL('../../../android/app/src/test/resources/i18n/render-cases.json', import.meta.url)))
-    for (const locale of ['de', 'es']) await loadLocaleMessages(locale)
+    for (const locale of ['de', 'es', 'zh-CN']) await loadLocaleMessages(locale)
     const composer = createAppI18n().global
     for (const entry of fixture.cases) {
         if (entry.message.key.startsWith('fixture.')) continue

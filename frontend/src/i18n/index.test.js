@@ -3,18 +3,20 @@ import assert from 'node:assert/strict'
 import { readFileSync, readdirSync } from 'node:fs'
 import { baseCompile } from '@intlify/message-compiler'
 import { createRenderer, h, nextTick } from 'vue'
-import { createAppI18n, DEFAULT_LOCALE, i18n, isSupportedLocale, readInitialLocale, setLocale, loadLocaleMessages } from './index.js'
+import { createAppI18n, DEFAULT_LOCALE, detectBrowserLocale, i18n, isSupportedLocale, matchSupportedLocale, readInitialLocale, setLocale, loadLocaleMessages } from './index.js'
 import en from './locales/en.json' with { type: 'json' }
 import de from './locales/de.json' with { type: 'json' }
 import es from './locales/es.json' with { type: 'json' }
 import fr from './locales/fr.json' with { type: 'json' }
 import ptBR from './locales/pt-BR.json' with { type: 'json' }
+import zhCN from './locales/zh-CN.json' with { type: 'json' }
 
 // These rendering tests exercise both catalogs; production loads them on demand.
 await loadLocaleMessages('pt-BR')
 await loadLocaleMessages('de')
 await loadLocaleMessages('es')
 await loadLocaleMessages('fr')
+await loadLocaleMessages('zh-CN')
 
 const storage = value => ({ getItem: () => value })
 
@@ -28,6 +30,7 @@ test('English is the default; only registered locales are accepted', () => {
     assert.equal(isSupportedLocale('fr'), true)
     assert.equal(isSupportedLocale('es'), true)
     assert.equal(isSupportedLocale('de'), true)
+    assert.equal(isSupportedLocale('zh-CN'), true)
 })
 
 test('saved locale is restored before login; corrupt or unavailable storage is harmless', () => {
@@ -35,10 +38,27 @@ test('saved locale is restored before login; corrupt or unavailable storage is h
     assert.equal(readInitialLocale(storage('{"locale":"fr"}')), 'fr')
     assert.equal(readInitialLocale(storage('{"locale":"es"}')), 'es')
     assert.equal(readInitialLocale(storage('{"locale":"de"}')), 'de')
+    assert.equal(readInitialLocale(storage('{"locale":"zh-CN"}')), 'zh-CN')
     for (const value of [null, '{', 'null', '{}', '{"locale":"it"}', '{"locale":12}']) {
         assert.equal(readInitialLocale(storage(value)), 'en')
     }
     assert.equal(readInitialLocale({ getItem() { throw new Error('Storage denied') } }), 'en')
+})
+
+test('browser languages map to supported locales; Traditional Chinese is not mapped', () => {
+    for (const tag of ['zh', 'zh-CN', 'zh_CN', 'zh-Hans', 'zh-Hans-CN', 'zh-SG', 'ZH-cn']) {
+        assert.equal(matchSupportedLocale(tag), 'zh-CN', tag)
+    }
+    for (const tag of ['zh-TW', 'zh-HK', 'zh-MO', 'zh-Hant', 'zh-Hant-TW', 'it', '', null]) {
+        assert.equal(matchSupportedLocale(tag), null, String(tag))
+    }
+    assert.equal(matchSupportedLocale('pt-PT'), 'pt-BR')
+    assert.equal(matchSupportedLocale('fr-CA'), 'fr')
+    assert.equal(detectBrowserLocale(['zh-TW', 'zh-CN', 'en']), 'zh-CN')
+    assert.equal(detectBrowserLocale(['it-IT', 'de-AT']), 'de')
+    assert.equal(detectBrowserLocale(['it-IT']), 'en')
+    // Outside a browser (Node tests, workers) no language is detected.
+    assert.equal(detectBrowserLocale(), 'en')
 })
 
 test('all messages compile and every translation covers the English keys', () => {
@@ -46,7 +66,8 @@ test('all messages compile and every translation covers the English keys', () =>
     assert.deepEqual(Object.keys(fr).sort(), Object.keys(en).sort())
     assert.deepEqual(Object.keys(de).sort(), Object.keys(en).sort())
     assert.deepEqual(Object.keys(es).sort(), Object.keys(en).sort())
-    for (const [locale, messages] of Object.entries({ en, de, es, fr, 'pt-BR': ptBR })) {
+    assert.deepEqual(Object.keys(zhCN).sort(), Object.keys(en).sort())
+    for (const [locale, messages] of Object.entries({ en, de, es, fr, 'pt-BR': ptBR, 'zh-CN': zhCN })) {
         for (const [key, message] of Object.entries(messages)) {
             assert.equal(typeof message, 'string', `${locale}.${key}`)
             assert.ok(message.trim(), `${locale}.${key} must not be empty`)

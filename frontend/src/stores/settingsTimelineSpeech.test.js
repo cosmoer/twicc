@@ -21,7 +21,7 @@ function settingsModule(t, saved = {}) {
         '../utils/colorSchemeTransition': {}, '../utils/worktreePath': {}, '../utils/publicOrigin': {},
         '../utils/originSettingsForm': {}, '../utils/compactHeight': { watchCompactHeight: noop },
         '../utils/reducedMotion': { applyReduceEffects: noop },
-        '../i18n': { DEFAULT_LOCALE: 'en', isSupportedLocale: value => value === 'en', setLocale: noop },
+        '../i18n': { DEFAULT_LOCALE: 'en', detectBrowserLocale: () => 'en', isSupportedLocale: value => value === 'en', setLocale: noop },
         '../i18n/androidLocale.js': { interfaceLocaleState: Vue.ref(null) },
         '../composables/useWebSocket': { sendSyncedSettings: (...args) => sent.push(args) },
     }

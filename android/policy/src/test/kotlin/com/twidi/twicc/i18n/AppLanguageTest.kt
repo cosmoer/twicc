@@ -14,7 +14,7 @@ class AppLanguageTest {
             assertEquals(LanguageSelection(current, false, UiMessage("android.language.errors.unsupported")),
                 current.select(locale, 1))
         }
-        for (locale in listOf("en", "de", "es", "fr", "pt-BR")) {
+        for (locale in listOf("en", "de", "es", "fr", "pt-BR", "zh-CN")) {
             assertTrue(initial.select(locale, 0).accepted)
         }
     }

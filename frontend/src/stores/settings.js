@@ -27,7 +27,7 @@ import { usablePublicOrigin } from '../utils/publicOrigin'
 import { ORIGIN_SETTING_KEYS } from '../utils/originSettingsForm'
 import { updateCompactHeight, watchCompactHeight } from '../utils/compactHeight'
 import { applyReduceEffects } from '../utils/reducedMotion'
-import { DEFAULT_LOCALE, isSupportedLocale, setLocale } from '../i18n'
+import { DEFAULT_LOCALE, detectBrowserLocale, isSupportedLocale, setLocale } from '../i18n'
 import { interfaceLocaleState } from '../i18n/androidLocale.js'
 
 const STORAGE_KEY = 'twicc-settings'
@@ -43,7 +43,8 @@ const STORAGE_KEY = 'twicc-settings'
  */
 export const SETTINGS_SCHEMA = {
     // --- Local-only settings (defaults defined here) ---
-    locale: DEFAULT_LOCALE,
+    // A first visit follows the browser's preferred language; the choice is then stored.
+    locale: detectBrowserLocale(),
     displayMode: DEFAULT_DISPLAY_MODE,
     fontSize: 16,
     colorScheme: DEFAULT_COLOR_SCHEME,

@@ -70,7 +70,7 @@ class InstanceManagerUiTest {
                 nameNode!!.requestFocus()
                 nameNode!!.setSelection(3)
             }
-            for (locale in listOf("en", "de", "es", "fr", "pt-BR")) {
+            for (locale in listOf("en", "de", "es", "fr", "pt-BR", "zh-CN")) {
                 assertTrue(language.select(locale, language.read().revision).accepted)
                 instrumentation.waitForIdleSync()
                 scenario!!.onActivity { activity ->
@@ -160,7 +160,7 @@ class InstanceManagerUiTest {
             var originalSheet: android.app.Dialog? = null
             scenario!!.onActivity { originalSheet = MainActivity::class.java.getDeclaredField("sheet")
                 .apply { isAccessible = true }.get(it) as android.app.Dialog }
-            for (locale in listOf("en", "de", "es", "fr", "pt-BR")) {
+            for (locale in listOf("en", "de", "es", "fr", "pt-BR", "zh-CN")) {
                 language.select(locale, language.read().revision)
                 instrumentation.waitForIdleSync()
                 scenario!!.onActivity { activity ->

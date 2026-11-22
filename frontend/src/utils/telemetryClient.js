@@ -56,7 +56,7 @@ export function setAndroidTelemetry(state) {
 
 export async function reportClient({ locale, navigator = globalThis.navigator, storage } = {}) {
     const token = captureTelemetry()
-    if (!token || !['en', 'de', 'es', 'fr', 'pt-BR'].includes(locale)) return
+    if (!token || !['en', 'de', 'es', 'fr', 'pt-BR', 'zh-CN'].includes(locale)) return
     try {
         // Serialize first creation across tabs. Re-read storage while holding
         // the origin-wide lock; each tab must send the same winning key.
